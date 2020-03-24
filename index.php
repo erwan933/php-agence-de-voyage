@@ -3,6 +3,7 @@
 <?php include'head.php'?>
 <title>Locasun | Votre agence de voyage</title>
 <body>
+    <?php include'topbar.php'?>
     <?php include'header.php'?>
     <?php include'landing/banner.php'?>
     

@@ -1,9 +1,21 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#h1{
+    margin: 20px;
+    font-size: 50px;
+    color: #000;
+}
+
+
+
 
 /****MENU CSS*****/
 
 
 .banner1{
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/travel.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,14 +37,19 @@
   font-size: 17px;
 }
 .logo{
-    padding: 0 !important;
+    padding: 10px !important;
+}
+.logo:hover{
+    background-color: #fff !important;
 }
 .menu-padding{
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 .right{
     float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .topnav a:hover {
@@ -54,4 +71,26 @@
 }
 
 /****END MENU CSS*****/
+/****BUTTONS*****/
+
+.button-style-1{
+    padding: 15px 30px;
+    background: #18A0FB;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.button-style-1:hover{
+    text-decoration: none;
+    background: #49b6ff;
+    color: #fff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    
+    
+}
+
+/****END BUTTONS*****/
 
