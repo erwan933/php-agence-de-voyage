@@ -94,3 +94,10 @@
 
 /****END BUTTONS*****/
 
+.section1{
+    margin-top: 70px; 
+    margin-bottom: 70px; 
+}
+.section1 img{
+    margin: 10px;
+}
