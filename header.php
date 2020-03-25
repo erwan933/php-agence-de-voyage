@@ -5,7 +5,7 @@
      <div class="row">
                  
          <div class="col-md-6 ">
-              <a href="/" class="logo"><img src="img/logo.jpg" alt="Logo Locasun" width="150px"></a>
+              <a href="/" class="logo"><img src="img/logo2.png" alt="Logo Locasun" width="90rem"></a>
           </div>   
                      
          <div class="col-md-6">

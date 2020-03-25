@@ -5,32 +5,74 @@
 #h1{
     margin: 20px;
     font-size: 50px;
-    color: #000;
+    color: #fff;
 }
 
-
+.h2{
+    font-size: 1.5rem !important;
+    font-weight: 900 !important;
+    
+}
 
 
 /****MENU CSS*****/
 
 
 .banner1{
-    background-image: url(../img/travel3.jpg);
+    background-image: url(../img/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
 }
 
+@media(max-width:800px){
+    .media-d-none{
+        display: none;
+    }
+}
+
+
+.topbar1{
+        background: #eff9ff;
+        width: 100%;
+        height: 40px;
+        color: #48B6FF;
+    font-weight: 700;
+        padding: 5px;
+        
+    }
+
+.topbar1 p{
+        margin: auto;
+        padding: auto;
+    font-size: 20px;
+        
+    }
+.topbar2{
+        background: #313131;
+        width: 100%;
+        height: 30px;
+        color: white;
+        padding: 5px;
+    }
+.topbar3{
+        background: #48B6FF;
+        width: 100%;
+        height: 30px;
+        color: white;
+        padding: 5px;
+    }
+
 .topnav {
-  background-color: #fff;
+  background-color: #313131;
   overflow: hidden;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #18A0FB;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -38,31 +80,30 @@
 }
 .logo{
     padding: 10px !important;
+    margin-left: 20px;
 }
-.logo:hover{
-    background-color: #fff !important;
-}
+
 .menu-padding{
-    margin-top: 12px;
+    
     margin-bottom: 12px;
 }
 .right{
     float: right;
-    margin-top: 10px;
+    
     margin-bottom: 10px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  
+  color: #48B6FF;
     text-decoration: none;
-    border-radius: 7px;
+    
 }
 
 .topnav a.active {
-  background-color: #18A0FB;
+  background-color: #48B6FF;
   color: white;
-  border-radius: 7px;
+  border-radius: 0 0 5px 5px;
    
 }
 
@@ -87,16 +128,37 @@
     background: #49b6ff;
     color: #fff;
     transition-property: background-color;
-    transition-duration: 0.5s;
-    
-    
+    transition-duration: 0.5s; 
+}
+
+.button-style-2{
+    padding: 15px 30px;
+    background: #fff;
+    text-decoration: none;
+    color: #18A0FB;
+    border: 2px solid #18A0FB;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.button-style-2:hover{
+    text-decoration: none;
+    background: #49b6ff;
+    color: #fff;
+    transition-property: background-color;
+    transition-duration: 0.5s; 
 }
 
 /****END BUTTONS*****/
 
 .section1{
-    margin-top: 70px; 
-    margin-bottom: 70px; 
+    padding-top: 55px; 
+    padding-bottom: 55px; 
+}
+.section2{
+    padding-top: 55px; 
+    padding-bottom: 55px; 
+    background: #eff9ff;
 }
 .section1 img{
     margin: 10px;
