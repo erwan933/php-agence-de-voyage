@@ -3,8 +3,8 @@
 }
 
 #h1{
-    margin: 20px;
-    font-size: 50px;
+    padding-left: 1rem;
+    font-size: 1.6rem;
     color: #fff;
 }
 
@@ -13,17 +13,29 @@
     font-weight: 900 !important;
     
 }
+.titre-h3{
+    font-size: 1.5rem !important;
+}
 
 
 /****MENU CSS*****/
 
 
 .banner1{
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/slide-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 546px;
+    
+}
+.banner-one{
+    background: #48B6FF;
+    padding: 10px;
+}
+.banner-one-2{
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
 }
 
 @media(max-width:800px){
@@ -65,14 +77,14 @@
     }
 
 .topnav {
-  background-color: #313131;
+  background-color: #fff;
   overflow: hidden;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #fff;
+  color: #48B6FF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -95,7 +107,7 @@
 
 .topnav a:hover {
   
-  color: #48B6FF;
+  color: #FF7947;
     text-decoration: none;
     
 }
@@ -163,8 +175,72 @@
 .section1 img{
     margin: 10px;
 }
+.sociaux{
+    padding: 12px 15px;
+    border-radius: 100%;
+    background: #131313;
+    color: #FF7947;
+    margin: 0 3px 0 3px;
+}
+.sociaux:hover{
+    background: #FF7947;
+    color: #131313;
+}
 
 footer{
     background: #313131;
     color: #fff;
+}
+.footer{
+    color:#a5a5a5;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+#cookie-notification {
+	position: fixed;
+	opacity: 0;
+	top: auto;
+	bottom: -70px;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	line-height: 24px;
+	background-color: #EEE;
+	color: #444;
+	z-index: 99;
+	-webkit-box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.15);
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+#cookie-notification .container {
+	padding-right: 100px;
+	position: relative;
+}
+
+#cookie-notification .cookie-noti-btn {
+	position: absolute;
+	top: 0;
+	left: auto;
+	right: 0;
+}
+
+.w100{
+    width: 100%;
+}
+
+.best-offer {
+    background-color: rgba(255,255,255,.75);
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+    bottom: 0;
+    max-height: 100%;
 }

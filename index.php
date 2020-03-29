@@ -14,10 +14,10 @@
         <h2>Choisissez votre idéal de vacances<br> avec LocaSun</h2>
         
         <div class="row text-center">
-          <div class="col-md-3"><img src="https://via.placeholder.com/250x130" alt=""><br>Vacances à la mer</div>
-            <div class="col-md-3"><img src="https://via.placeholder.com/250x130" alt=""><br>Vacances à la montagne</div>
-            <div class="col-md-3"><img src="https://via.placeholder.com/250x130" alt=""><br>Vacances à la campagne</div>
-            <div class="col-md-3"><img src="https://via.placeholder.com/250x130" alt=""><br>Archipels</div>
+          <div class="col-md-3"><img src="img/mer.jpg" alt=""><br>Vacances à la mer</div>
+            <div class="col-md-3"><img src="img/montagne.jpg" alt=""><br>Vacances à la montagne</div>
+            <div class="col-md-3"><img src="img/campagne.jpg" alt=""><br>Vacances à la campagne</div>
+            <div class="col-md-3"><img src="img/archipels.jpg" alt=""><br>Archipels</div>
         </div>
         
         
@@ -29,9 +29,10 @@
         <section class="section1">
            <div class="container">
             <div class="row">
-                <div class="col-md-7 ">
-                    <img src="https://via.placeholder.com/530x290" alt="">
+                <div class="col-md-6 ">
+                    <img src="img/particulier.jpg" alt="" width="100%">
                 </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-5 align-middle">
                     
                     <table style="height: 290px;">
@@ -72,8 +73,9 @@
                       </tbody>
                     </table>
                 </div>
-                <div class="col-md-7 ">
-                    <img src="https://via.placeholder.com/530x290" alt="">
+                <div class="col-md-1"></div>
+                <div class="col-md-6 ">
+                    <img src="img/particulier2.jpg" alt="" class="w100">
                 </div>
 
             </div>
@@ -83,28 +85,112 @@
        <div class="container text-center">
         <h2>Vous avez choisi la bonne agence</h2>
         
+        
         <div class="row">
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
+            
+            
+            <div class="col-md-6">
+                <img src="img/vignette.jpg" alt="" class="w100">
+                <div class="best-offer">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3>Vacances d'été</h3>
+                        <div>
+                            <p>Réservez <strong>vos vacances</strong> !</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <span >à partir de</span>
+                        <span >429€</span>
+                        <span class="btn btn-primary btn-icon--right">
+                            En profiter
+                        </span>
+                    </div>
+                </div> 
+            </div>
+            
+            </div>
+            <div class="col-md-6">
+            <img src="img/vignette.jpg" alt="" class="w100">
+            <div class="best-offer">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3>Vacances d'été</h3>
+                        <div>
+                            <p>Réservez <strong>vos vacances</strong> !</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <span >à partir de</span>
+                        <span >429€</span>
+                        <span class="btn btn-primary btn-icon--right">
+                            En profiter
+                        </span>
+                    </div>
+                </div> 
+            </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
-            <div class="col-mb-3"><img src="https://via.placeholder.com/230x120" alt=""></div>
+         <div class="row">
+            
+            
+            <div class="col-md-6">
+                <img src="img/vignette.jpg" alt="" class="w100">
+                <div class="best-offer">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3>Vacances d'été</h3>
+                        <div>
+                            <p>Réservez <strong>vos vacances</strong> !</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <span >à partir de</span>
+                        <span >429€</span>
+                        <span class="btn btn-primary btn-icon--right">
+                            En profiter
+                        </span>
+                    </div>
+                </div> 
+            </div>
+            
+            </div>
+            <div class="col-md-6">
+            <img src="img/vignette.jpg" alt="" class="w100">
+            <div class="best-offer">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3>Vacances d'été</h3>
+                        <div>
+                            <p>Réservez <strong>vos vacances</strong> !</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <span >à partir de</span>
+                        <span >429€</span>
+                        <span class="btn btn-primary btn-icon--right">
+                            En profiter
+                        </span>
+                    </div>
+                </div> 
+            </div>
+            </div>
         </div>
         
     </div>
     
     </section>
-   <section class="section2 align-middle">
-<div class="row ">
-    <div class="col-md-8"><h2>Vous avez choisi la bonne agence</h2></div>
-    <div class="col-md-2" class="align-center"><a href="#" class="button-style-1" >Nos destinations</a></div>
-    <div class="col-md-2" class="align-center"><a href="#" class="button-style-2" >Nos destinations</a></div>
-</div>
+   <section class="section2">
+   <div class="container">
+        <div class="row ">
+            <div class="col-md-7">
+                <h2>Vous avez choisi la bonne agence</h2>
+                <p>Faites confiance à LocaSun pour le bon déroulement de vos voyages</p>
+            </div>
+            <a href="#" class="button-style-1" >Nos destinations</a>
+            <a href="#" class="button-style-2" >Contact</a>
+        </div>
+   </div>
 
    </section>
         
@@ -113,6 +199,7 @@
     
     
     <?php include'footer.php'?>
+    <?php include'cookie.php'?>
     <?php include'script.php'?>
 </body>
 </html>
