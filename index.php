@@ -14,10 +14,10 @@
         <h2>Choisissez votre idéal de vacances<br> avec LocaSun</h2>
         
         <div class="row text-center">
-          <div class="col-md-3"><img src="img/mer.jpg" alt=""><br>Vacances à la mer</div>
-            <div class="col-md-3"><img src="img/montagne.jpg" alt=""><br>Vacances à la montagne</div>
-            <div class="col-md-3"><img src="img/campagne.jpg" alt=""><br>Vacances à la campagne</div>
-            <div class="col-md-3"><img src="img/archipels.jpg" alt=""><br>Archipels</div>
+          <div class="col-md-3 image"><img src="img/mer.jpg" alt=""><br><br>Vacances à la mer</div>
+            <div class="col-md-3 image"><img src="img/montagne.jpg" alt=""><br><br>Vacances à la montagne</div>
+            <div class="col-md-3 image"><img src="img/campagne.jpg" alt=""><br><br>Vacances à la campagne</div>
+            <div class="col-md-3 image"><img src="img/archipels.jpg" alt=""><br><br>Archipels</div>
         </div>
         
         
@@ -29,7 +29,7 @@
         <section class="section1">
            <div class="container">
             <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6 image">
                     <img src="img/particulier.jpg" alt="" width="100%">
                 </div>
                 <div class="col-md-1"></div>
@@ -74,7 +74,7 @@
                     </table>
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-6 ">
+                <div class="col-md-6 image">
                     <img src="img/particulier2.jpg" alt="" class="w100">
                 </div>
 
