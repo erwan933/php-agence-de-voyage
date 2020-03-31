@@ -1,25 +1,24 @@
+<?php include'BDD/connexion-bdd.php'?> 
 <!DOCTYPE html>
 <html lang="fr">
-<?php include'head.php'?>
+<?php include'layout/head.php'?>
 <title>Locasun | Votre agence de voyage</title>
 <body>
-    <?php include'topbar.php'?>
-    <?php include'header.php'?>
+    <?php include'layout/topbar.php'?>
+    <?php include'layout/header.php'?>
     <?php include'landing/breadcrumb.php'?>
     
    
        <section class="section1">
               <div role="main" class="main">
 				<div class="container">
-
-					
 					<div class="row mb-5">
 						<div class="col-md-5 mb-5 mb-md-0">
 							<div>
-									<span class="d-block">
-										<img alt="Product Image" src="img/produit1.jpg" class="img-fluid">
-									</span>
-								</div>
+                                <span class="d-block">
+                                    <img alt="Product Image" src="img/produit1.jpg" class="img-fluid">
+                                </span>
+                            </div>
 						</div>
 						<div class="col-md-7">
 							<h2 class="line-height-1 font-weight-bold mb-2">Black Ladies Skert</h2>
@@ -40,7 +39,6 @@
 							</ul>
 							<hr class="my-4">
 							
-							
 							<div class="d-flex align-items-center">
 								<span class="text-2">SHARE</span>
 								<ul class="social-icons social-icons-dark social-icons-1 ml-3">
@@ -57,8 +55,6 @@
 								<li class="nav-item">
 									<a class="nav-link font-weight-bold active" id="productDetailDescTab" data-toggle="tab" href="#productDetailDesc" role="tab" aria-controls="productDetailDesc" aria-expanded="true">DESCRIPTION</a>
 								</li>
-								
-								
 							</ul>
 							<div class="tab-content" id="contentTabProductDetail">
 								<div class="tab-pane fade pt-4 pb-4 show active" id="productDetailDesc" role="tabpanel" aria-labelledby="productDetailDescTab">
@@ -84,8 +80,8 @@
  		</section>
     
     
-    <?php include'footer.php'?>
-    <?php include'cookie.php'?>
-    <?php include'script.php'?>
+    <?php include'layout/footer.php'?>
+    <?php include'layout/cookie.php'?>
+    <?php include'layout/script.php'?>
 </body>
 </html>

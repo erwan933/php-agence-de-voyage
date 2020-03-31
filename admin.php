@@ -1,16 +1,17 @@
+<?php include'BDD/connexion-bdd.php'?> 
 <!DOCTYPE html>
 <html lang="fr">
-<?php include'head.php'?>
+<?php include'layout/head.php'?>
 <title>Locasun | Votre agence de voyage</title>
     <body>
-        <?php include'topbar.php'?>
-        <?php include'header.php'?>
+        <?php include'layout/topbar.php'?>
+        <?php include'layout/header.php'?>
         <?php include'landing/breadcrumb.php'?>
         
 
    
        
-         <?php include'footer.php'?> 
-         <?php include'script.php'?> 
+         <?php include'layout/footer.php'?> 
+         <?php include'layout/script.php'?> 
     </body>
 </html>
