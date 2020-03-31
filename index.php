@@ -14,10 +14,10 @@
         <h2>Choisissez votre idéal de vacances avec LocaSun</h2>
         <br><br>
         <div class="row text-center">
-          <div class="col-md-3 image"><img src="img/mer.jpg" alt="" class="w100"><br><br>Vacances à la mer</div>
-            <div class="col-md-3 image"><img src="img/montagne.jpg" alt="" class="w100"><br><br>Vacances à la montagne</div>
-            <div class="col-md-3 image"><img src="img/campagne.jpg" alt="" class="w100"><br><br>Vacances à la campagne</div>
-            <div class="col-md-3 image"><img src="img/archipels.jpg" alt="" class="w100"><br><br>Archipels</div>
+          <div class="col-md-3 image"><img src="img/mer.jpg" alt="" class="w100 shadow1"><br><br>Vacances à la mer</div>
+            <div class="col-md-3 image"><img src="img/montagne.jpg" alt="" class="w100 shadow1"><br><br>Vacances à la montagne</div>
+            <div class="col-md-3 image"><img src="img/campagne.jpg" alt="" class="w100 shadow1"><br><br>Vacances à la campagne</div>
+            <div class="col-md-3 image"><img src="img/archipels.jpg" alt="" class="w100 shadow1"><br><br>Archipels</div>
         </div>
         
         
@@ -30,7 +30,7 @@
            <div class="container">
             <div class="row">
                 <div class="col-md-6 image">
-                    <img src="img/particulier.jpg" alt="" width="100%">
+                    <img src="img/particulier.jpg" alt="" class="w100 shadow1"> 
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5 align-middle">
@@ -39,7 +39,12 @@
                       <tbody>
                         <tr>
                           
-                          <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p></td>
+                          <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+						  <div class="text-center">
+                           		<a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
+                          </div>
+							
+							</td>
                          
                          
                         </tr>
@@ -75,7 +80,7 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 image">
-                    <img src="img/particulier2.jpg" alt="" class="w100">
+                    <img src="img/particulier2.jpg" alt="" class="w100 shadow1">
                 </div>
 
             </div>
@@ -90,7 +95,7 @@
             
             
             <div class="col-md-6">
-                <img src="img/vignette.jpg" alt="" class="w100">
+                <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
                 <div class="best-offer">
                 <div class="row">
                     <div class="col-md-7">
@@ -111,7 +116,7 @@
             
             </div>
             <div class="col-md-6">
-            <img src="img/vignette.jpg" alt="" class="w100">
+            <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
             <div class="best-offer">
                 <div class="row">
                     <div class="col-md-7">
@@ -135,7 +140,7 @@
             
             
             <div class="col-md-6">
-                <img src="img/vignette.jpg" alt="" class="w100">
+                <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
                 <div class="best-offer">
                 <div class="row">
                     <div class="col-md-7">
@@ -156,7 +161,7 @@
             
             </div>
             <div class="col-md-6">
-            <img src="img/vignette.jpg" alt="" class="w100">
+            <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
             <div class="best-offer">
                 <div class="row">
                     <div class="col-md-7">
@@ -183,7 +188,7 @@
    <section class="section2">
    <div class="container">
         <div class="row ">
-            <div class="col-md-7">
+            <div class="col-xl-7">
                 <h2>Vous avez choisi la bonne agence</h2>
                 <p>Faites confiance à LocaSun pour le bon déroulement de vos voyages</p>
             </div>

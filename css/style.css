@@ -73,10 +73,14 @@
     padding: 10px;
 }
 .banner-one-2{
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.8);
     padding: 10px;
 }
 
+.banner-prix{
+	font-weight: 700;
+	color: #ff7947;
+}
 
 
 @media(max-width:800px){
@@ -84,6 +88,11 @@
         display: none;
     }
 }
+
+.shadow1 {
+	box-shadow: 3px 3px 9px 2px rgba(0, 0, 0, .2); 
+}
+
 .image img {
 /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
 -webkit-transition: all 1s ease; /* Safari et Chrome */
@@ -105,6 +114,9 @@ transform:scale(1.15);
     
     margin-bottom: 12px;
 }
+.m10{
+	margin:10px;
+}
 .newsletter{
     padding: 10px 15px;
 }
@@ -123,9 +135,7 @@ transform:scale(1.15);
     padding-bottom: 55px; 
     background: #eff9ff;
 }
-.section1 img{
-    margin: 10px;
-}
+
 .sociaux{
     padding: 12px 15px;
     border-radius: 100%;
@@ -228,13 +238,13 @@ transform:scale(1.15);
 /****END MENU CSS*****/
 /****MENU BURGER*****/
 
-@media (max-width:1275px) {
+@media (max-width:1000px) {
     #myTopnav{
         display: none;
     }
     
 }
-@media (min-width:1275px) {
+@media (min-width:1000px) {
     #myTopnavMobile{
         display: none;
     }
