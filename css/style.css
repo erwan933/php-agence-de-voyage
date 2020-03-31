@@ -92,7 +92,12 @@
 .shadow1 {
 	box-shadow: 3px 3px 9px 2px rgba(0, 0, 0, .2); 
 }
-
+.star{
+    color: #FFCE31;
+}
+.title-voyage{
+    font-size: 1.6rem;
+}
 .image img {
 /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
 -webkit-transition: all 1s ease; /* Safari et Chrome */
@@ -110,6 +115,19 @@ transition: all 1s ease;
 transform:scale(1.15);
 }
 
+.image img{
+    border-radius: 10px;
+}
+
+.img-fluid{
+    border-radius: 12px 12px 0 0 ;
+}
+.radius-bottom{
+    border-radius: 0 0 12px 12px;
+    background: #aaddff;
+    color: #000;
+    padding: 15px;
+}
 .menu-padding{
     
     margin-bottom: 12px;
@@ -120,11 +138,17 @@ transform:scale(1.15);
 .newsletter{
     padding: 10px 15px;
 }
+
+
+
+
 .right{
     float: right;
     
     margin-bottom: 10px;
 }
+
+
 
 .section1{
     padding-top: 55px; 
@@ -351,6 +375,25 @@ transform:scale(1.15);
     transition-duration: 0.5s; 
 }
 
+.button-style-3{
+    padding: 8px 20px;
+    background: #fff;
+    text-decoration: none;
+    color: #18A0FB;
+    border: 2px solid #18A0FB;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.button-style-3:hover{
+    text-decoration: none;
+    border: 2px solid #18A0FB;
+    background: #18A0FB;
+    color: #fff;
+    transition-property: background-color;
+    transition-duration: 0.5s; 
+}
+
 /****END BUTTONS*****/
 
 
@@ -439,4 +482,16 @@ a.blue:hover{
     color: #333;
    transition-duration: 0.3s;
 }
+.bg-gris{
+    background: #f1f1f1;
+}
+.bg-bleu{
+    background: #f2f9ff;
+}
 /*****END FOOTER******/
+
+
+
+/*********CARTE TRAVEL********/
+
+

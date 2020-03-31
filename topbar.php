@@ -1,6 +1,6 @@
 
 <div class="topbar1 text-center">
-            <p>ALERTE COVID-19 ! RESTEZ CHEZ VOUS !</p>
+            <p class="blue">ALERTE COVID-19 ! RESTEZ CHEZ VOUS !</p>
 </div>
    
    
@@ -18,7 +18,7 @@
                 
            </div>
             <div class="col-md-4 responsive-none">
-            <p>ALERTE COVID-19 ! RESTEZ CHEZ VOUS !</p>
+            
            </div>
         </div>
     </div>
