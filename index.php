@@ -11,13 +11,13 @@
        
        <section class="section2">
         <div class="container">
-        <h2>Choisissez votre idéal de vacances<br> avec LocaSun</h2>
-        
+        <h2>Choisissez votre idéal de vacances avec LocaSun</h2>
+        <br><br>
         <div class="row text-center">
-          <div class="col-md-3 image"><img src="img/mer.jpg" alt=""><br><br>Vacances à la mer</div>
-            <div class="col-md-3 image"><img src="img/montagne.jpg" alt=""><br><br>Vacances à la montagne</div>
-            <div class="col-md-3 image"><img src="img/campagne.jpg" alt=""><br><br>Vacances à la campagne</div>
-            <div class="col-md-3 image"><img src="img/archipels.jpg" alt=""><br><br>Archipels</div>
+          <div class="col-md-3 image"><img src="img/mer.jpg" alt="" class="w100"><br><br>Vacances à la mer</div>
+            <div class="col-md-3 image"><img src="img/montagne.jpg" alt="" class="w100"><br><br>Vacances à la montagne</div>
+            <div class="col-md-3 image"><img src="img/campagne.jpg" alt="" class="w100"><br><br>Vacances à la campagne</div>
+            <div class="col-md-3 image"><img src="img/archipels.jpg" alt="" class="w100"><br><br>Archipels</div>
         </div>
         
         
