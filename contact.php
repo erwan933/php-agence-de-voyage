@@ -1,4 +1,19 @@
-<?php include'BDD/connexion-bdd.php'?>       
+<?php include'BDD/connexion-bdd.php';
+
+
+
+ 
+
+if($_POST) {
+ $result = $pdo->exec("INSERT INTO contact (prenom, nom, phone, email, sujet, message) VALUES
+ ('$_POST[prenom]', '$_POST[nom]','$_POST[phone]','$_POST[email]','$_POST[sujet]','$_POST[message]' )");
+}
+
+
+   ?>
+   
+   
+      
          
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,7 +39,7 @@
                                        <div class="row">
                                              <div class="col-md-6">
                                                   <label for="prenom"  >Prénom : *</label>
-                                                  <input type="text" placeholder="Eddy" name="prenom" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;">
+                                                  <input type="text" placeholder="Eddy" name="prenom" style="border:2px solid #fff;width:100%; padding:10px;background:#fff; " >
                                               </div>
                                               <div class="col-md-6"> 
                                                   <label for="nom" name="nom">Nom : *</label>
@@ -35,11 +50,11 @@
                                          <div class="row">
                                               <div class="col-md-4">
                                                   <label for="phone">Téléphone :</label>
-                                                  <input type="text" placeholder="06 00 00 00 00" name="phone" style="border:2px solid #fff;width:100%; padding:10px; background:#fff;">
+                                                  <input type="tel" placeholder="06 00 00 00 00" name="phone" style="border:2px solid #fff;width:100%; padding:10px; background:#fff;" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}">
                                               </div> 
                                                <div class="col-md-8">
                                                     <label for="email">Email : *</label>
-                                                    <input type="text" placeholder="contact@exemple.com" name="email"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
+                                                    <input type="email" placeholder="contact@exemple.com" name="email"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
                                                </div>  
                                           </div> 
                                       <br>

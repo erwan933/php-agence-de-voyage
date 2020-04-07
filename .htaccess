@@ -1,0 +1,3 @@
+ RewriteRule ^Administrtateur$ admin.php [L] 
+ 
+ ErrorDocument 404 /404.php
