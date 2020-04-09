@@ -7,7 +7,115 @@
         <?php include'layout/topbar.php'?>
         <?php include'layout/header.php'?>
         <?php include'landing/breadcrumb.php'?>
-        
+  
+        <section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 text-center">
+
+                <article class="card">
+                <header class="card__thumb">
+                    <img src="https://picsum.photos/370/235/">
+                    
+                </header>
+                <div class="card__date">
+                    <span class="card__date__day">12</span>
+                    
+                    <span class="card__date__month">Mai</span>
+                    
+                </div>  
+                <div class="card__body">
+                    
+                    <div class="card__category"><a href="#">Photos</a></div>
+                    
+                    <div class="card__title"><a href="#">Une petite phrase de titre</a></div>
+                    
+                    <div class="card__subtitle">Qu'est-ce que le Lorem Ipsum?</div>
+                    
+                    <p class="card__description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+                    
+                </div>  
+                    
+                    <footer class="card__footer">
+                        
+                        <span class="icon icon--time"><i class="fas fa-comments"></i></span>6 min
+                        
+                        <span class="icon icon--comment"><i class="fas fa-comments"></i></span><a href="#">39 comments</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-xl-4">
+
+                <article class="card">
+                <header class="card__thumb">
+                    <img src="https://picsum.photos/370/235/">
+                    
+                </header>
+                <div class="card__date">
+                    <span class="card__date__day">12</span>
+                    
+                    <span class="card__date__month">Mai</span>
+                    
+                </div>  
+                <div class="card__body">
+                    
+                    <div class="card__category"><a href="#">Photos</a></div>
+                    
+                    <div class="card__title"><a href="#">Une petite phrase de titre</a></div>
+                    
+                    <div class="card__subtitle">Qu'est-ce que le Lorem Ipsum?</div>
+                    
+                    <p class="card__description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+                    
+                </div>  
+                    
+                    <footer class="card__footer">
+                        
+                        <span class="icon icon--time"><i class="fas fa-comments"></i></span>6 min
+                        
+                        <span class="icon icon--comment"><i class="fas fa-comments"></i></span><a href="#">39 comments</a>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-xl-4">
+
+                <article class="card">
+                <header class="card__thumb">
+                    <img src="https://picsum.photos/370/235/">
+                    
+                </header>
+                <div class="card__date">
+                    <span class="card__date__day">12</span>
+                    
+                    <span class="card__date__month">Mai</span>
+                    
+                </div>  
+                <div class="card__body">
+                    
+                    <div class="card__category"><a href="#">Photos</a></div>
+                    
+                    <div class="card__title"><a href="#">Une petite phrase de titre</a></div>
+                    
+                    <div class="card__subtitle">Qu'est-ce que le Lorem Ipsum?</div>
+                    
+                    <p class="card__description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</p>
+                    
+                </div>  
+                    
+                    <footer class="card__footer">
+                        
+                        <span class="icon icon--time"><i class="fas fa-comments"></i></span>6 min
+                        
+                        <span class="icon icon--comment"><i class="fas fa-comments"></i></span><a href="#">39 comments</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>        
+
+
+
 <section class="section1"></section>
   <section>
             <div role="main" class="main">
