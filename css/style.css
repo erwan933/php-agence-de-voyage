@@ -164,7 +164,6 @@ h2 {
   color: #FF7947;
   margin: 0 3px 0 3px;
 }
-
 .sociaux:hover {
   background: #48B6FF;
   color: #fff;
@@ -187,7 +186,6 @@ h2 {
   font-weight: 700;
   padding: 5px;
 }
-
 .topbar1 p {
   margin: auto;
   padding: auto;
@@ -209,11 +207,9 @@ h2 {
   color: white;
   padding: 5px;
 }
-
 .topbar3 a {
   color: #fff;
 }
-
 .topbar3 a:hover {
   color: #313131;
   text-decoration: none;
@@ -224,7 +220,6 @@ h2 {
   background-color: #fff;
   overflow: hidden;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -234,31 +229,27 @@ h2 {
   text-decoration: none;
   font-size: 17px;
 }
-
-.topnav a.active:hover {
-  background: #ff7947;
-  transition-duration: 0.3s;
-}
-
-.logo {
-  padding: 10px !important;
-  margin-left: 20px;
-}
-
-.topnav a:hover {
-  color: #FF7947;
-  text-decoration: none;
-  transition-duration: 0.3s;
-}
-
 .topnav a.active {
   background-color: #48B6FF;
   color: white;
   border-radius: 0 0 5px 5px;
 }
-
+.topnav a:hover {
+  color: #FF7947;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.topnav a.active:hover {
+  background: #ff7947;
+  transition-duration: 0.3s;
+}
 .topnav .icon {
   display: none;
+}
+
+.logo {
+  padding: 10px !important;
+  margin-left: 20px;
 }
 
 .w100 {

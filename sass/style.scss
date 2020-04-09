@@ -124,7 +124,7 @@ h2 {
   }
 }
 
-
+ 
 .img-fluid {
   border-radius: 12px 12px 0 0;
 }
@@ -174,18 +174,18 @@ h2 {
   background: #131313;
   color: #FF7947;
   margin: 0 3px 0 3px;
-}
 
-.sociaux:hover {
+  &:hover {
   background: #48B6FF;
   color: #fff;
   transition-duration: 0.3s;
+}
 }
 
 .star {
   color: #FFCE31;
 }
-
+ 
 .title-voyage {
   font-size: 1.6rem;
 }
@@ -197,13 +197,14 @@ h2 {
   color: #48B6FF;
   font-weight: 700;
   padding: 5px;
+
+  & p{
+    margin: auto;
+    padding: auto;
+    font-size: 20px;
+  }
 }
 
-.topbar1 p {
-  margin: auto;
-  padding: auto;
-  font-size: 20px;
-}
 
 .topbar2 {
   background: #313131;
@@ -219,36 +220,54 @@ h2 {
   height: 30px;
   color: white;
   padding: 5px;
-}
 
-.topbar3 a {
+  & a {
   color: #fff;
+
+  &:hover{
+    color: #313131;
+    text-decoration: none;
+    transition-duration: 0.3s;
+  }
+}
 }
 
-.topbar3 a:hover {
-  color: #313131;
-  text-decoration: none;
-  transition-duration: 0.3s;
-}
 
 .topnav {
   background-color: #fff;
   overflow: hidden;
-}
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #48B6FF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  & a{
+    float: left;
+    display: block;
+    color: #48B6FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 
-.topnav a.active:hover {
-  background: #ff7947;
-  transition-duration: 0.3s;
+    &.active{
+      background-color: #48B6FF;
+      color: white;
+      border-radius: 0 0 5px 5px;
+
+    }
+    &:hover{
+      color: #FF7947;
+      text-decoration: none;
+      transition-duration: 0.3s;
+    }
+    &.active:hover{
+      background: #ff7947;
+      transition-duration: 0.3s;
+    }
+
+
+  }
+  .icon{
+    display: none;
+
+  }
 }
 
 .logo {
@@ -256,21 +275,6 @@ h2 {
   margin-left: 20px;
 }
 
-.topnav a:hover {
-  color: #FF7947;
-  text-decoration: none;
-  transition-duration: 0.3s;
-}
-
-.topnav a.active {
-  background-color: #48B6FF;
-  color: white;
-  border-radius: 0 0 5px 5px;
-}
-
-.topnav .icon {
-  display: none;
-}
 
 .w100 {
   width: 100%;
