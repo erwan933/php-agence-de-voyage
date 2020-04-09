@@ -5,8 +5,8 @@
  
 
 if($_POST) {
- $result = $pdo->exec("INSERT INTO agence (title, destination, members, activity, equipment, gallery, price) VALUES
- ('$_POST[title]', '$_POST[destination]','$_POST[members]','$_POST[activity]','$_POST[equipment]','$_POST[gallery]','$_POST[price]'  )");
+ $result = $pdo->exec("INSERT INTO agence (title, destination, members, article, activity, equipment, gallery, price) VALUES
+ ('$_POST[title]', '$_POST[destination]','$_POST[members]','$_POST[article]','$_POST[activity]','$_POST[equipment]','$_POST[gallery]','$_POST[price]'  )");
 }
 
 
@@ -26,12 +26,12 @@ if($_POST) {
                 <div class="container">
                      <div class="row">
                         
-
+                     
                                <form action="" method="post">
                                        <div class="row">
                                              <div class="col-md-6">
                                                   <label for="title"  >Titre de l'annonce: *</label>
-                                                  <input type="text" placeholder="Hôtel Marmara" name="title" style="border:2px solid #fff;width:100%; padding:10px;background:#fff; " >
+                                                  <input type="text" placeholder="Hôtel Marmara" name="title" class="formulaire" style="border:2px solid #fff;width:100%; padding:10px;background:#fff; " >
                                               </div>
                                               <div class="col-md-6"> 
                                                   <label for="destination" name="nom">Destination : *</label>
@@ -41,8 +41,17 @@ if($_POST) {
                                          <div class="row">
                                                <div class="col-md-12">
                                                     <label for="members">Nombre de personnes : *</label>
-                                                   <input type="text" placeholder="5" name="members" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;">
+                                                   <input type="number" placeholder="5" name="members" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;">
 
+                                               </div>
+                                              
+                                          </div> 
+                                              <br>
+                                          <div class="row">
+                                               <div class="col-md-12">
+                                                    <label for="members">Description * <sub>(maxi 200 carracteres)</sub> </label>
+                                                   
+                                                    <textarea name="article" rows="5" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"></textarea>
                                                </div>
                                               
                                           </div>  
@@ -68,7 +77,7 @@ if($_POST) {
                                           <div class="row">
                                                <div class="col-md-12">
                                                     <label for="price">Prix : *</label>
-                                                   <input type="text" placeholder="1000" name="price"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
+                                                   <input type="number" placeholder="1000" name="price"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
 
                                                </div>
                                               <div class="text-center">

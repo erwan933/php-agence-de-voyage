@@ -257,6 +257,10 @@ h2 {
 }
 
 /**** CSS*****/
+.p-t10 {
+  padding-top: 10px;
+}
+
 /****MENU BURGER*****/
 @media (max-width: 1000px) {
   #myTopnav {
@@ -430,6 +434,13 @@ footer {
 }
 
 /****END COOKIES*****/
+/*********CSS********/
+.lieu {
+  background: #e68303;
+  padding: 10px 30px;
+  width: 100%;
+}
+
 /*******FOOTER********/
 .blanc {
   color: #fff;
