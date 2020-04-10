@@ -75,87 +75,67 @@
                    <div class="container text-center">
                     <h2>Vous avez choisi la bonne agence</h2>
                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
-                            <div class="best-offer">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <h3>Vacances d'été</h3>
-                                        <div>
-                                            <p>Réservez <strong>vos vacances</strong> !</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <span >à partir de</span>
-                                        <span >429€</span>
-                                        <span class="btn btn-primary btn-icon--right"> En profiter </span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                        <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
-                            <div class="best-offer">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <h3>Vacances d'été</h3>
-                                        <div>
-                                            <p>Réservez <strong>vos vacances</strong> !</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <span >à partir de</span>
-                                        <span >429€</span>
-                                        <span class="btn btn-primary btn-icon--right"> En profiter</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
-                            <div class="best-offer">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <h3>Vacances d'été</h3>
-                                        <div>
-                                            <p>Réservez <strong>vos vacances</strong> !</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <span >à partir de</span>
-                                        <span >429€</span>
-                                        <span class="btn btn-primary btn-icon--right">
-                                            En profiter
-                                        </span>
-                                    </div>
-                                </div> 
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <img src="img/vignette.jpg" alt="" class="w100 m10 shadow1">
-                        <div class="best-offer">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <h3>Vacances d'été</h3>
-                                    <div>
-                                        <p>Réservez <strong>vos vacances</strong> !</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <span >à partir de</span>
-                                    <span >429€</span>
-                                    <span class="btn btn-primary btn-icon--right">
-                                        En profiter
-                                    </span>
-                                </div>
-                            </div> 
-                        </div>
-                        </div>
-                    </div>
+                         <?php 
+    
+                                    
+                                    $result = $pdo->query("SELECT * FROM agence LIMIT 2");
+                                        
 
-                </div>
+                                        
+                                        while($listeArticle = $result->fetch(PDO::FETCH_ASSOC)){ 
+                                        ?>
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   <div class="col-xl-6 text-center">
+
+                <article class="card " style="width:100%" >
+                <header class="card__thumb">
+                    <img src="<?php echo $listeArticle["gallery"]; ?>" width="100%">
+                    
+                </header>
+                <div class="card__date">
+                    <span class="card__date__day"><?php echo $listeArticle["members"]; ?></span>
+                    
+                    <span class="card__date__month"><i class="fas fa-user-friends"></i></span>
+                    
+                </div>  
+                <div class="card__body__2">
+                    
+                    <div class="card__category"><a href="#">Photos</a></div>
+                    
+                    <div class="card__title"><a href="produit.php?id=<?php echo $listeArticle['id']; ?>"><?php echo $listeArticle["title"]; ?></a></div>
+                    
+                    <div class="card__subtitle"><?php echo $listeArticle["destination"]; ?></div>
+                     
+                    <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </span></p>
+                    
+                     
+                </div>  
+                </article>
+            </div>
+          <?php } ?>
+
+              
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                               
+                        
             </section>
             <section class="section2">
                <div class="container">

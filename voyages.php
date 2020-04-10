@@ -52,7 +52,7 @@ $result = $pdo->query("SELECT * FROM agence ");
                     
                     <div class="card__subtitle"><?php echo $listeArticle["destination"]; ?></div>
                      
-                    <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </span></p>
+                    <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </p>
                     
                      
                 </div>  
@@ -65,6 +65,7 @@ $result = $pdo->query("SELECT * FROM agence ");
                         
                         <span class="icon icon--comment"><i class="fas fa-comments"></i></span><a href="#">39 comments</a>
                     </footer>
+        
                 </article>
             </div>
           <?php } ?>

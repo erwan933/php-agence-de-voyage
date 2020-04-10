@@ -31,17 +31,17 @@ if($_POST) {
                                        <div class="row">
                                              <div class="col-md-6">
                                                   <label for="title"  >Titre de l'annonce: *</label>
-                                                  <input type="text" placeholder="Hôtel Marmara" name="title" class="formulaire" style="border:2px solid #fff;width:100%; padding:10px;background:#fff; " >
+                                                  <input type="text" placeholder="Hôtel Marmara" name="title" class="formulaire" >
                                               </div>
                                               <div class="col-md-6"> 
                                                   <label for="destination" name="nom">Destination : *</label>
-                                                  <input type="text" placeholder="Paris, FRANCE" name="destination" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;">
+                                                  <input type="text" placeholder="Paris, FRANCE" name="destination" class="formulaire">
                                                </div>
                                          </div>
                                          <div class="row">
                                                <div class="col-md-12">
                                                     <label for="members">Nombre de personnes : *</label>
-                                                   <input type="number" placeholder="5" name="members" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;">
+                                                   <input type="number" placeholder="5" name="members" class="formulaire">
 
                                                </div>
                                               
@@ -51,7 +51,7 @@ if($_POST) {
                                                <div class="col-md-12">
                                                     <label for="members">Description * <sub>(maxi 200 carracteres)</sub> </label>
                                                    
-                                                    <textarea name="article" rows="5" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"></textarea>
+                                                    <textarea name="article" rows="5" class="formulaire"></textarea>
                                                </div>
                                               
                                           </div>  
@@ -63,21 +63,21 @@ if($_POST) {
                                               </div> 
                                                <div class="col-md-8">
                                                     <label for="equipement">Equipements : *</label>
-                                                    <input type="text" placeholder="TV, WiFi,..." name="equipment"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
+                                                    <input type="text" placeholder="TV, WiFi,..." name="equipment"  class="formulaire"> 
                                                </div>  
                                           </div> 
                                       <br>
                                           <div class="row">
                                                <div class="col-md-12">
                                                     <label for="gallery">Image : *</label>
-                                                    <input type="text" placeholder="https://..." name="gallery"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
+                                                    <input type="text" placeholder="https://..." name="gallery"  class="formulaire"> 
                                                </div>  
                                           </div> 
                                       <br>
                                           <div class="row">
                                                <div class="col-md-12">
                                                     <label for="price">Prix : *</label>
-                                                   <input type="number" placeholder="1000" name="price"  style="border:2px solid #fff;width:100%; padding:10px;background:#fff;"> 
+                                                   <input type="number" placeholder="1000" name="price"  class="formulaire"> 
 
                                                </div>
                                               <div class="text-center">

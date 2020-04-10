@@ -47,11 +47,9 @@
 											<td class="banner-prix">425€</td>
 										</tr>
 									    
-									   
+										
 								   </table>
-                                   <div class="text-center">
-                                   		<a href="nos-voyages" class="button-style-1" style="display:inline-block; padding: 10px 20px; ">Nos Voyages</a>
-                             	   </div>
+                                   
                            
                            
                         </div>

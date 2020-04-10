@@ -157,6 +157,12 @@ h2 {
   background: #eff9ff;
 }
 
+.section__dark {
+  padding-top: 55px;
+  background: #f1f1f1;
+  padding-bottom: 55px;
+}
+
 .sociaux {
   padding: 12px 15px;
   border-radius: 100%;
@@ -341,7 +347,7 @@ h2 {
   background: #18A0FB;
   text-decoration: none;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50px;
   margin: 20px;
 }
 
@@ -490,6 +496,7 @@ a.blue:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s;
   margin-top: 30px;
+  border-radius: 20px !important;
 }
 
 .card a {
@@ -546,7 +553,6 @@ a.blue:hover {
 .card__thumb {
   height: 235px;
   overflow: hidden;
-  background-color: #000;
   transition: height 0.3s;
 }
 
@@ -577,6 +583,22 @@ a.blue:hover {
   height: 330px;
 }
 
+.card__body__2 {
+  position: relative;
+  padding: 20px;
+  height: 125px;
+  transition: height 0.3s;
+}
+
+.card:hover .card__body__2 {
+  height: 270px;
+}
+
+@media screen and (max-width: 505px) {
+  .card:hover .card__body__2 {
+    height: 290px;
+  }
+}
 .card__category {
   position: absolute;
   left: 0;
@@ -685,6 +707,13 @@ a.blue:hover {
   height: 17px;
   margin-top: -2px;
   margin-right: 7px;
+}
+
+.formulaire {
+  border: 2px solid #fff;
+  width: 100%;
+  padding: 10px;
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
