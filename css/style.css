@@ -1,9 +1,14 @@
+
+
+
 body {
   font-family: "Caveat", "Raleway";
+
 }
 
 * {
-  font-family: "Montserrat";
+  font-family: 'Comfortaa', "Montserrat";
+  
 }
 
 /******* ID ********/
@@ -50,6 +55,11 @@ h2 {
   .media-d-none {
     display: none;
   }
+}
+
+.max-width1rem{
+  font-size: 1.2rem !important;
+    margin-top: 13px;
 }
 .banner1 {
   background-image: url(../img/slide-1.jpg);
@@ -118,6 +128,17 @@ h2 {
   border-radius: 12px 12px 0 0;
 }
 
+.inscriptions{
+    background: #f4f4f4;
+    padding: 40px 0;
+    color: #313131;
+    border-radius: 10px;
+    border:1px solid #d3d3d3;
+}
+#sun-bg{
+  
+
+}
 .menu-padding {
   margin-bottom: 12px;
 }
@@ -259,7 +280,7 @@ h2 {
 }
 
 .w100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 /**** CSS*****/

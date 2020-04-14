@@ -9,69 +9,8 @@
         <?php include'landing/banner.php'?>
 
 
-
-            <section class="section2">
-                <div class="container">
-                    <h2>Choisissez votre idéal de vacances avec LocaSun</h2>
-                        <br><br>
-                    <div class="row text-center">
-                      <div class="col-md-3 image"><img src="img/mer.jpg" alt="" class="w100 shadow1"><br><br>Vacances à la mer</div>
-                        <div class="col-md-3 image"><img src="img/montagne.jpg" alt="" class="w100 shadow1"><br><br>Vacances à la montagne</div>
-                        <div class="col-md-3 image"><img src="img/campagne.jpg" alt="" class="w100 shadow1"><br><br>Vacances à la campagne</div>
-                        <div class="col-md-3 image"><img src="img/archipels.jpg" alt="" class="w100 shadow1"><br><br>Archipels</div>
-                    </div>
-                 </div>  
-            </section>
-
-            <section class="section1">
-               <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 image">
-                            <img src="img/particulier.jpg" alt="" class="w100 shadow1"> 
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5 align-middle">
-
-                            <table style="height: 290px;">
-                              <tbody>
-                                <tr>
-                                  <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                                      <div class="text-center">
-                                        <a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
-                                      </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-            </section> 
-            <section class="section2">
-               <div class="container">
-                    <div class="row">
-                       <div class="col-md-5 align-middle">
-                            <table style="height: 290px;">
-                              <tbody>
-                                <tr>
-                                  <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                                      <div class="text-center">
-                                       <a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
-                                      </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6 image">
-                            <img src="img/particulier2.jpg" alt="" class="w100 shadow1">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section1">
+            
+               <section class="section2">
                    <div class="container text-center">
                     <h2>Vous avez choisi la bonne agence</h2>
                     <div class="row">
@@ -111,31 +50,108 @@
                     
                     <div class="card__subtitle"><?php echo $listeArticle["destination"]; ?></div>
                      
-                    <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </span></p>
+                    <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </p>
                     
                      
                 </div>  
                 </article>
             </div>
-          <?php } ?>
-
-              
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
-                                   
+          <?php } ?>                    
                                
-                        
+                       </div>
+                   </div>      
+            </section>
+
+            
+
+            <section class="section1">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">      
+                                 <article class="card w100">
+                                        <img src="img/particulier.jpg" alt="" class="w100 shadow1">
+                                  </article>   
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5 align-middle">
+
+                            <table style="height: 290px;">
+                              <tbody>
+                                <tr>
+                                  <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                                      <div class="text-center">
+                                        <a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
+                                      </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section> 
+            <section class="section2">
+               <div class="container">
+                    <div class="row">
+                       <div class="col-md-5 align-middle">
+                            <table style="height: 290px;">
+                              <tbody>
+                                <tr>
+                                  <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                                      <div class="text-center">
+                                       <a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
+                                      </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">      
+                                 <article class="card w100">
+                                        <img src="img/particulier2.jpg" alt="" class="w100 shadow1">
+                                  </article>   
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <section class="section1">
+                <div class="container">
+                    <h2>Choisissez votre idéal de vacances avec LocaSun</h2>
+                        <br><br>
+                    <div class="row text-center">
+                     
+                     <div class="col-md-3">
+                         <article class="card w100">
+                                <img src="img/mer.jpg" width="100%">
+                                
+                          </article>
+                         <p class="max-width1rem">Vacances à la mer</p>
+                     </div>
+                     <div class="col-md-3">
+                         <article class="card w100">
+                                <img src="img/montagne.jpg" width="100%">
+                          </article>
+                          <p class="max-width1rem">Vacances à la montagne</p>
+                     </div> 
+                     <div class="col-md-3">
+                         <article class="card w100">
+                                <img src="img/campagne.jpg" width="100%">
+                          </article>
+                          <p class="max-width1rem">Vacances à la campagne</p>
+                     </div>
+                     <div class="col-md-3">
+                         <article class="card w100">
+                                <img src="img/archipels.jpg" width="100%">
+                          </article>
+                          <p class="max-width1rem">Archipels</p>
+                     </div>
+                     
+                    </div>  
+                     
+                </div>
+                  
             </section>
             <section class="section2">
                <div class="container">

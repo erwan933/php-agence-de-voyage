@@ -11,7 +11,7 @@
       'id' => $_GET["delete"]
   ));
          
-        header('Location:annonce.php');
+        
 } 
 
     
@@ -30,10 +30,14 @@
             
 
         ));
-         header('Location:annonce.php');
+         
     }
 
 
+
+
+     
+    
 ?> 
 <!DOCTYPE html>
 <html lang="fr">
@@ -44,67 +48,90 @@
         <?php include'layout/header.php'?>
         <?php include'landing/breadcrumb.php'?>
         
+   <section class="section1 bg-gris">
 
-<section class="section__dark">
-        <div class="container text-center">
+       <div class="container text-center">
             <h2> Déposez une annonce</h2>
             <span>Déposez une annonce avec votre agence de voyage Locasun</span>
             <hr>
         </div>
-</section>
-
-   <section class="bg-gris">
-
         <div class="container ">
 <div class="row">
- <div class="col-xl-3 formulaire__fond"> 
+ <div class="formulaire__fond"> 
   
   <form method="POST"><br>
-    <label for="title"  >Titre de l'annonce: *</label>
-    <input type="text" placeholder="Hôtel Marmara" name="title" class="formulaire" >
-
-    <label for="destination" name="nom">Destination : *</label>
-    <input type="text" placeholder="Paris, FRANCE" name="destination" class="formulaire">
-
-    <label for="members">Nombre de personnes : *</label>
-    <input type="number" placeholder="5" name="members" class="formulaire" min="1" require>
-
+       <div class="row">
+           <div class="col-xl-5">
+                <label for="title"  >Titre de l'annonce: *</label>
+                <input type="text" placeholder="Hôtel Marmara" name="title" class="formulaire" >
+            </div>
+               
+            <div class="col-xl-4">
+                <label for="destination" name="nom">Destination : *</label>
+                <input type="text" placeholder="Paris, FRANCE" name="destination" class="formulaire">
+            </div>
+               
+            <div class="col-xl-3">
+                <label for="members">Nombre de personnes : *</label>
+                <input type="number" placeholder="5" name="members" class="formulaire" min="1" require>
+            </div>
+        </div>
+        <br>
+    
+      <div class="row">
+        <div class="col-xl-12">
+            <label for="members">Description * <sub>(maxi 200 carracteres)</sub> </label>
+            <textarea name="article" rows="5" class="formulaire"></textarea>
+        </div>
+      </div>
     <br />
     
-    <label for="members">Description * <sub>(maxi 200 carracteres)</sub> </label>
-    <textarea name="article" rows="5" class="formulaire"></textarea>
-    
+    <div class="row">
+        <div class="col-xl-6">
+            <label for="activity">Activités :</label>
+            <input type="text" placeholder="Jet Ski, Quad,..." name="activity" class="formulaire" >
+        </div>
+           
+        <div class="col-xl-6">
+            <label for="equipement">Equipements : *</label>
+            <input type="text" placeholder="TV, WiFi,..." name="equipment"  class="formulaire">
+        </div>
+      </div>
     <br />
     
-    <label for="activity">Activités :</label>
-    <input type="text" placeholder="Jet Ski, Quad,..." name="activity" class="formulaire" >
     
-    <br /><br />
-
-    <label for="equipement">Equipements : *</label>
-<input type="text" placeholder="TV, WiFi,..." name="equipment"  class="formulaire">
-
-    <br />
-    <label for="gallery">Image : *</label>
+    <div class="row">
+        <div class="col-xl-10">
+            <label for="gallery">Image : *</label>
 <input type="text" placeholder="https://..." name="gallery"  class="formulaire">
-<br>
-<label for="price">Prix : *</label>
+        </div>
+           
+        <div class="col-xl-2">
+            <label for="price">Prix : *</label>
 <input type="number" placeholder="1000" name="price"  class="formulaire" min="1" require>
+        </div>
+      </div>
+    <br />
+ 
 
 <div class="text-center">
     <input type="submit" value="Envoyer le formulaire" class="button-style-3">
+     
 </div>
+
 
    <!-- <input type="submit" value="Envoyer" id="target">-->
        
        
-      <!--    <script>alert("<?php// echo htmlspecialchars('Votre article à bien été ajouté', ENT_QUOTES); ?>")</script>  -->
+          <!--<script>alert("<?php //echo htmlspecialchars('Votre article à bien été ajouté', ENT_QUOTES); ?>")</script>-->
        
       
   </form>
+   
   </div>
-  <div class="col-md-9">
-   <div class="row">
+  
+  <div class="row">
+  
    <?php 
     
   
@@ -115,7 +142,7 @@ $result = $pdo->query("SELECT * FROM agence ");
     while($listeArticle = $result->fetch(PDO::FETCH_ASSOC)){ 
     ?>
 
-<div class="col-xl-6 ">
+<div class="col-xl-4 ">
 <article class="card">
                 <header class="card__thumb">
                     <img src="<?php echo $listeArticle["gallery"]; ?>" width="100%">
@@ -154,8 +181,11 @@ $result = $pdo->query("SELECT * FROM agence ");
 
 
 
-<?php } ?></div></div>
-</div>
+<?php   } ?></div>
+  
+
+  </div>
+
   </div>
 
 
