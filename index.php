@@ -1,6 +1,6 @@
 <?php include'BDD/connexion-bdd.php'?> 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
 <?php include'layout/head.php'?>
 <title>Locasun | Votre agence de voyage</title>
     <body>
@@ -158,7 +158,7 @@
                     <div class="row ">
                         <div class="col-xl-7">
                             <h2>Vous avez choisi la bonne agence</h2>
-                            <p>Faites confiance à LocaSun pour le bon déroulement de vos voyages</p>
+                            <span>Faites confiance à LocaSun pour le bon déroulement de vos voyages</span>
                         </div>
                         <a href="#" class="button-style-1" >Nos destinations</a>
                         <a href="#" class="button-style-2" >Contact</a>
@@ -168,7 +168,7 @@
             </section>
 
         <?php include'layout/footer.php'?>
-        <?php include'layout/cookie.php'?>
+        
         <?php include'layout/script.php'?>
     </body>
 </html>

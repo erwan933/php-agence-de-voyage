@@ -1,3 +1,10 @@
- RewriteRule ^Administrtateur$ admin.php [L] 
+RewriteRule ^Administrtateur$ admin.php [L] 
  
- ErrorDocument 404 /404.php
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^dev.topadev.com [NC]
+RewriteCond %{REQUEST_URI} !
+RewriteRule ^(.*)$ https://www.dev.topadev.com/$1 [L,R=301,NC]
+
+ 
