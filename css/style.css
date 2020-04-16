@@ -1,14 +1,9 @@
-
-
-
 body {
   font-family: "Caveat", "Raleway";
-
 }
 
 * {
-  font-family: 'Comfortaa', "Montserrat";
-  
+  font-family: "Montserrat";
 }
 
 /******* ID ********/
@@ -55,11 +50,6 @@ h2 {
   .media-d-none {
     display: none;
   }
-}
-
-.max-width1rem{
-  font-size: 1.2rem !important;
-    margin-top: 13px;
 }
 .banner1 {
   background-image: url(../img/slide-1.jpg);
@@ -128,17 +118,6 @@ h2 {
   border-radius: 12px 12px 0 0;
 }
 
-.inscriptions{
-    background: #f4f4f4;
-    padding: 40px 0;
-    color: #313131;
-    border-radius: 10px;
-    border:1px solid #d3d3d3;
-}
-#sun-bg{
-  
-
-}
 .menu-padding {
   margin-bottom: 12px;
 }
@@ -232,7 +211,7 @@ h2 {
   width: 100%;
   height: 30px;
   color: white;
-  padding: 5px;
+  padding: 2px;
 }
 .topbar3 a {
   color: #fff;
@@ -268,6 +247,7 @@ h2 {
 }
 .topnav a.active:hover {
   background: #ff7947;
+    color: #fff;
   transition-duration: 0.3s;
 }
 .topnav .icon {
@@ -280,7 +260,7 @@ h2 {
 }
 
 .w100 {
-  width: 100% !important;
+  width: 100%;
 }
 
 /**** CSS*****/
@@ -417,6 +397,31 @@ h2 {
   transition-property: background-color;
   transition-duration: 0.5s;
 }
+
+.bouton-php{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+    color: #18A0FB;
+    background-color: #fff;
+    border-color: #18A0FB;
+}
+.bouton-php:hover{
+    color: #fff;
+    background-color: #18A0FB;
+    border-color: #fff;
+    
+}
+
 
 /****END BUTTONS*****/
 footer {
@@ -736,6 +741,9 @@ a.blue:hover {
   padding: 10px;
   background: #fff;
 }
+
+
+
 
 /*# sourceMappingURL=style.css.map */
 

@@ -194,6 +194,7 @@ $result = $pdo->query("SELECT * FROM agence ");
 
        
          <?php include'layout/footer.php'?> 
-         <?php include'layout/script.php'?> 
+         <?php include'layout/script.php'?>
+         <?php include'js/popup.php'?> 
     </body>
 </html>

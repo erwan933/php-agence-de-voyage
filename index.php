@@ -1,6 +1,6 @@
 <?php include'BDD/connexion-bdd.php'?> 
 <!DOCTYPE html>
-<html lang="fr" xmlns:og="http://ogp.me/ns#">
+<html lang="fr" xmlns:og="http://ogp.me/ns#" id="top">
 <?php include'layout/head.php'?>
 <title>Locasun | Votre agence de voyage</title>
     <body>
@@ -68,7 +68,7 @@
                <div class="container">
                     <div class="row">
                         <div class="col-md-6">      
-                                 <article class="card w100">
+                                 <article class=" w100">
                                         <img src="img/particulier.jpg" alt="" class="w100 shadow1">
                                   </article>   
                         </div>
@@ -109,7 +109,7 @@
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-6">      
-                                 <article class="card w100">
+                                 <article class=" w100">
                                         <img src="img/particulier2.jpg" alt="" class="w100 shadow1">
                                   </article>   
                         </div>
@@ -123,26 +123,26 @@
                     <div class="row text-center">
                      
                      <div class="col-md-3">
-                         <article class="card w100">
+                         <article class=" w100">
                                 <img src="img/mer.jpg" width="100%">
                                 
                           </article>
                          <p class="max-width1rem">Vacances à la mer</p>
                      </div>
                      <div class="col-md-3">
-                         <article class="card w100">
+                         <article class=" w100">
                                 <img src="img/montagne.jpg" width="100%">
                           </article>
                           <p class="max-width1rem">Vacances à la montagne</p>
                      </div> 
                      <div class="col-md-3">
-                         <article class="card w100">
+                         <article class=" w100">
                                 <img src="img/campagne.jpg" width="100%">
                           </article>
                           <p class="max-width1rem">Vacances à la campagne</p>
                      </div>
                      <div class="col-md-3">
-                         <article class="card w100">
+                         <article class=" w100">
                                 <img src="img/archipels.jpg" width="100%">
                           </article>
                           <p class="max-width1rem">Archipels</p>
@@ -163,12 +163,20 @@
                         <a href="#" class="button-style-1" >Nos destinations</a>
                         <a href="#" class="button-style-2" >Contact</a>
                     </div>
+                    
                </div>
 
             </section>
-
-        <?php include'layout/footer.php'?>
+            
+       
         
+        <?php include'layout/footer.php'?>
         <?php include'layout/script.php'?>
+        <?php include'js/popup.php'?>
+       
+        
+        
+        
+        
     </body>
 </html>

@@ -1,16 +1,16 @@
-    
+    <div class="container">
 <div class="topnav" id="myTopnav">
      <div class="row">
                  
-         <div class="col-md-6 ">
+         <div class="col-md-1 ">
               <a href="index.php" class="logo"><img src="img/logo2.png" alt="Logo Locasun" width="90rem"></a>
-          </div>   
-                     
-         <div class="col-md-6">
+         </div>   
+         <div class="col-md-4"></div>     
+         <div class="col-md-7">
             
             
              <div class="right">
-                  <a href="voyages.php" class="active menu-padding">NOS VOYAGES</a>
+                  <a href="voyages.php" class="active menu-padding" id="hover">NOS VOYAGES</a>
                   <a href="annonce.php" class=" menu-padding">Déposer une annonce</a>
                   <a href="admin.php" class=" menu-padding">Mon Espace</a>
                   <a href="contact.php" class=" menu-padding">Contact</a>
@@ -20,7 +20,7 @@
     </div>
  </div>
     
-    
+    </div>
 
 <div class="topnav-mobile" id="myTopnavMobile">
              <div class="right-mobile">

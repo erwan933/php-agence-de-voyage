@@ -34,11 +34,11 @@
                       <p class="orange">
                             <i class="fas fa-chevron-right">&nbsp;</i>
                             <span class="blanc">Adresse :</span>
-                                <br><br> 
+                                <br>
                             84 Allée Gambetta <br>77000, Meaux 
                       </p>
 
-                        <br><br>
+                        <br>
                         
                         <p class="orange">
                             <i class="fas fa-chevron-right">&nbsp;</i>

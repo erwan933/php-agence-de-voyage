@@ -115,7 +115,8 @@ $listeArticle = $result->fetch(PDO::FETCH_ASSOC);
     
     
     <?php include'layout/footer.php'?>
-   
     <?php include'layout/script.php'?>
+    <?php include'js/popup.php'?>
+    
 </body>
 </html>

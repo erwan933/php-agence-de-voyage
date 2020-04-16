@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/style.css">
     
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -19,8 +20,10 @@
     <meta property="og:title" content="LocaSun | Pour un voyage réussi" />
     <meta property="og:url" content="http://www.projet-php.topadev.com" />
     <meta property="og:image" content="http://www.projet-php.topadev.com/img/slide-1.jpg" />
-
+   
+    <link rel="stylesheet" href="css/popup.css">   
 
     <script src="https://kit.fontawesome.com/c9bc4d46f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    
 </head>
