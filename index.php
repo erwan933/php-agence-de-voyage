@@ -1,4 +1,9 @@
-<?php include'BDD/connexion-bdd.php'?> 
+<?php include'BDD/connexion-bdd.php'
+
+
+
+
+?> 
 <!DOCTYPE html>
 <html lang="fr" xmlns:og="http://ogp.me/ns#" id="top">
 <?php include'layout/head.php'?>
@@ -7,7 +12,6 @@
         <?php include'layout/topbar.php'?>
         <?php include'layout/header.php'?>
         <?php include'landing/banner.php'?>
-
 
             
                <section class="section2">
@@ -175,7 +179,7 @@
         <?php include'js/popup.php'?>
        
         
-        
+        <a class="scroll-to-top hidden-mobile visible" href="#"><i class="fas fa-arrow-up "></i></a>
         
         
     </body>

@@ -1,5 +1,5 @@
 <?php
-    include'BDD/connexion-bdd.php';
+    include_once('bdd.php');
     session_start(); 
     if(!isset($_SESSION['logged_in'])) {
         header('location: log.php');
@@ -27,11 +27,26 @@
 
 ?>
 
-
+<!DOCTYPE html>
+<html lang="en">
+<?php include'layout/head.php'?> 
+<body>
+   
+   <?php include'layout/topbar.php'?>
+   <?php include'layout/header.php'?>
+   <?php include'landing/breadcrumb.php'?>
+   
+    <section class="section">
     <div class="container">
     <form method="POST">
-        <h1>Page acceuil </h1>
+        <h2>Page acceuil </h2>
         <p>Vous êtes connecté(e) <strong><?=$_SESSION['pseudo']?></strong></p>
         <a href="?logout=true&key=<?=$key?>">Se deconnecter</a>
+        <a href="index.php">Accueil</a>
     </form>
     </div>
+    </section>
+    <?php include'layout/footer.php'?> 
+    <?php include'layout/script.php'?> 
+</body>
+</html>

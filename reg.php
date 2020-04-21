@@ -1,8 +1,8 @@
 <?php
-    include'BDD/connexion-bdd.php';
-    //session_start(); 
+    include_once('bdd.php');
+    session_start(); 
     if(isset($_SESSION['logged_in'])) {
-        header('location: index.php');
+        header('location: ind.php');
     }
 
     $errorEmail = false;
@@ -23,12 +23,12 @@
     
             // check form email valid
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $errorEmail = "L'adresse email '$email' est considérée comme invalide.";
+                $errorEmail = "L'adresse email '$email' n'est pas valide.";
             }
     
             // check number char pseudo < 10
             if (strlen($pseudo) > 10) {
-                $errorPseudo = "Le Pseudo est trop long!";
+                $errorPseudo = "Le pseudo est trop long!";
             }
     
             // Validate password strength
@@ -71,7 +71,7 @@
                     $query->execute();
                     $_SESSION['logged_in'] = true;
                     $_SESSION['pseudo'] = $pseudo;
-                    header('location: index.php');
+                    header('location: ind.php');
                     exit();
                 }
             }
@@ -79,25 +79,47 @@
             
     }
 ?>
+<!DOCTYPE html>
+<html lang="fr">
+<?php include'layout/head.php'?>
+<body>
+   <?php include'layout/topbar.php'?>
+   <?php include'layout/header.php'?>
+   <?php include'landing/breadcrumb.php'?>
+    
+    <section class="section2">
+    <div class="container">
+    <div class="row">
+       <div class="col-xl-2"></div>
+        <div class="col-xl-8">
 
-            <form method="POST" >
-                <h1 class="h2">Créer un compte </h1>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input value="<?php if((isset($_POST['email']))) { echo $_POST['email']; } ?>" name="email" type="text" class="formulaire" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="contact@exemple.fr">
-                    <?php if($errorEmail) ?> <small class="error form-text"> <?php echo $errorEmail ?> </small> 
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPseudo">Pseudo</label>
-                    <input value="<?php if((isset($_POST['pseudo']))) { echo $_POST['pseudo']; } ?>" name="pseudo" type="text" class="formulaire" id="exampleInputPseudo" placeholder="Maurice99">
-                    <?php if($errorPseudo) ?> <small class="error form-text"> <?php echo $errorPseudo ?> </small> 
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Mot de passe</label>
-                    <input value="<?php if((isset($_POST['password']))) { echo $_POST['password']; } ?>" name="password" type="password" class="formulaire" id="exampleInputPassword1">
-                    <?php if($errorPassword) ?> <small class="error form-text"> <?php echo $errorPassword ?> </small>
-                </div>
-                <a href="connexion.php">J'ai un compte ?</a> <br> <br>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
+    <form method="POST">
+        <h2>Créer un compte </h2>
+        <div class="form-group">
+            <label for="exampleInputPseudo">Pseudo</label>
+            <input value="<?php if((isset($_POST['pseudo']))) { echo $_POST['pseudo']; } ?>" name="pseudo" type="text" class="formulaire" id="exampleInputPseudo">
+            <?php if($errorPseudo) ?> <small class="error form-text"> <?php echo $errorPseudo ?> </small> 
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input value="<?php if((isset($_POST['email']))) { echo $_POST['email']; } ?>" name="email" type="text" class="formulaire" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <?php if($errorEmail) ?> <small class="error form-text"> <?php echo $errorEmail ?> </small> 
+        </div>
         
+        <div class="form-group">
+            <label for="exampleInputPassword1">Mot de passe</label>
+            <input value="<?php if((isset($_POST['password']))) { echo $_POST['password']; } ?>" name="password" type="password" class="formulaire" id="exampleInputPassword1">
+            <?php if($errorPassword) ?> <small class="error form-text"> <?php echo $errorPassword ?> </small>
+        </div>
+        <a href="log.php">J'ai un compte ?</a> <br> <br>
+        <button type="submit" class="bouton-php">S'inscrire</button>
+    </form>
+    </div>
+    <div class="col-xl-2"></div>
+        </div>
+        </div>
+    </section>
+    <?php include'layout/footer.php'?>
+    <?php include'layout/script.php'?>
+</body>
+</html>

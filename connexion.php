@@ -54,6 +54,6 @@
                     <input value="<?php if((isset($_POST['password']))) { echo $_POST['password']; } ?>" name="password" type="password" class="formulaire" id="exampleInputPassword1">
                     <?php if($errorPassword) ?> <small class="error form-text"> <?php echo $errorPassword ?> </small>
                 </div>
-                <a href="annonce.php">Je n' ai pas de compte ? S'inscrire</a> <br> <br>
+                <a href="inscriptions.php">Je n' ai pas de compte ? S'inscrire</a> <br> <br>
                 <button type="submit" class="bouton-php">Connexion</button>
             </form>

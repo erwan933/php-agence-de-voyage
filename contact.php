@@ -44,7 +44,7 @@ if($_POST) {
                                               </div>
                                               <div class="col-md-6"> 
                                                   <label for="nom" name="nom">Nom : *</label>
-                                                  <input type="text" placeholder=" MOLIA" name="nom" style="border:2px solid #fff;width:100%; padding:10px;background:#fff;">
+                                                  <input type="text" placeholder=" MOLIA" name="nom" style="border:2px solid #fff; width:100%; padding:10px;background:#fff;">
                                                </div>
                                          </div>
                                      <br> 

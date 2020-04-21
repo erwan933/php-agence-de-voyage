@@ -22,8 +22,10 @@
              <div class="demo-btns">
 		<div class="info">
 			<div class="buttons">
-					<a href="" data-modal="#modal" class="modal__trigger h2">Connexion</a>
-					<a href="" data-modal="#modal2" class="modal__trigger color-orange h2 ">Inscription</a>
+					<!--<a href="" data-modal="#modal" class="modal__trigger h2">Connexion</a>
+					<a href="" data-modal="#modal2" class="modal__trigger color-orange h2 ">Inscription</a>-->
+					<a href="log.php" >Mon espace</a>
+					<a href="reg.php" >Inscription</a>
 					
 			</div>
 			
@@ -32,7 +34,7 @@
 
 	<!-- Modal -->
 	<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
+		
 			<div class="modal__content">
 				
 				
@@ -44,7 +46,7 @@
 				</a>
 				
 			</div>
-		</div>
+		
 	</div>
           <div id="modal2" class="modal modal__bg" role="dialog" aria-hidden="true">
 		<div class="modal__dialog">
