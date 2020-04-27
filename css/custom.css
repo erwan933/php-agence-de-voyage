@@ -5,4 +5,8 @@ html .scroll-to-top{
     background:#ff7848 ;
     font-size: 15px;
     transition-delay: 0.3s;
+    
+}
+html{
+     scroll-behavior: smooth;
 }
