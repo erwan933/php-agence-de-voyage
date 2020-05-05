@@ -68,24 +68,33 @@
         <div class="container">
             <h2>Se connecter : </h2>
                 <?php 
+    
+    
+    
 
     if (isset($_POST) AND !empty($_POST)){
-       
+      
        if(!empty(htmlspecialchars($_POST['pseudo'])) AND !empty(htmlspecialchars($_POST['password']))){
-           
-           $req = $pdo->prepare('SELECT * FROM users WHERE pseudo = :pseudo AND password = :password');
+            
+           $req = $pdo->prepare('SELECT * FROM users WHERE pseudo = :pseudo');
 
            $req->execute([
                
                'pseudo' => $_POST['pseudo'],
-               'password' => $_POST['password'],
                
            ]);
-           $user = $req->fetchObject();
+           $user = $req->fetch();
+                       
            if ($user){
-               
-               $_SESSION['admin'] = $_POST['pseudo'];
-               header('location:index.php');
+                 
+               if (password_verify($_POST['password'], $user['password'])){
+   
+                   $_SESSION['admin'] = $_POST['pseudo'];
+                   header('location:index.php'); 
+               }
+               else {
+                   $error = "<p class='error-form'>Identifiant ou mot de passe incorrect !</p>";
+               }
            }else {
                $error = "<p class='error-form'>Identifiant ou mot de passe incorrect !</p>";
            }
@@ -96,14 +105,17 @@
        }
    }
 
+ 
+            
     
-    
-                ?>
+ 
+
+?>
 
     <div class="row">
         <div class="col-xl-2"></div>
         <div class="col-xl-8">
-            <form action="login.php" method="POST">
+            <form method="POST">
 
                <div class="form-group">
                     <label for="pseudo">Pseudo</label>

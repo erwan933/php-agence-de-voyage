@@ -93,9 +93,19 @@ if(isset($_GET['logout'], $_GET['key']) && !empty($_GET['key'])) {
                <div class="col-md-4"></div>
                <div class="col-md-4">
                   <div class="row"> 
+                         <?php 
+    
+    $result = $pdo->query("SELECT * FROM users ");
+
+    while($listeArticle = $result->fetch(PDO::FETCH_ASSOC)){ 
+        
+        ?>
+         
+   
                       <div class="col-md-2 image-admin" > 
-                           <img src="https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=845&q=80" alt="Photo Profil">
-                       </div> 
+                           <img src="<?php echo $listeArticle["photo"]; ?>" alt="Photo Profil">
+                       </div>
+                        <?php   } ?> 
                       <div class="col-md-10">
                           <p>Vous êtes connecté(e) <strong><?=$_SESSION['admin']?></strong></p>
                            <a href="?logout=true&key=$_SESSION['admin']">Se deconnecter</a>

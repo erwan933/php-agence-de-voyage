@@ -5,18 +5,22 @@
 
     $errorEmail = false;
     $errorPseudo = false;
+    $errorPhoto = false;
     $errorPassword = false;
 
-    if(isset($_POST['email'], $_POST['pseudo'], $_POST['password'])) {
+    if(isset($_POST['email'], $_POST['pseudo'], $_POST['photo'], $_POST['password'])) {
         if(empty($_POST['email'])) {
             $errorEmail = "<p class='error-form'>Veuillez remplir ce champ !</p>";
         }else if(empty($_POST['pseudo'])) {
             $errorPseudo = "<p class='error-form'>Veuillez remplir ce champ !</p>";
+        }else if (empty($_POST['photo'])) {
+        $errorPhoto = "";
         }else if (empty($_POST['password'])) {
             $errorPassword = "<p class='error-form'>Veuillez remplir ce champ !</p>";
         } else {
             $email = $_POST['email'];
             $pseudo = $_POST['pseudo'];
+            $photo = $_POST['photo'];
             $password = $_POST['password'];
     
             // check form email valid
@@ -39,9 +43,9 @@
                 $errorPassword = "<p class='error-form'>* Le mot de passe doit comporter au moins 8 caractères et doit comprendre au moins une lettre majuscule.</p>";
             }
 
-            if($errorEmail == false && $errorPseudo == false && $errorPassword == false) {
+            if($errorEmail == false && $errorPseudo == false && $errorPhoto == false && $errorPassword == false) {
 
-                $password = md5($password); // hach password
+                $password = password_hash($password, PASSWORD_DEFAULT); // hach password
 
                 // first check the database to make sure 
                 // a user does not already exist with the same pseudo and/or email
@@ -62,10 +66,11 @@
                         $errorPseudo = "Pseudo déjà existant, <a href='login.php'>connexion ?</a>";
                     }
                 } else {
-                    $query = $pdo->prepare("INSERT INTO users(email, pseudo, password) VALUES(?, ?, ?)");
+                    $query = $pdo->prepare("INSERT INTO users(email, pseudo, photo, password) VALUES(?, ?, ?, ?)");
                     $query->bindValue(1, $email);
                     $query->bindValue(2, $pseudo);
-                    $query->bindValue(3, $password);
+                    $query->bindValue(3, $pseudo);
+                    $query->bindValue(4, $password);
                     $query->execute();
                     $_SESSION['logged_in'] = true;
                     $_SESSION['pseudo'] = $pseudo;
@@ -157,6 +162,11 @@
                         <input value="<?php if((isset($_POST['email']))) { echo $_POST['email']; } ?>" name="email" type="text" class="formulaire" id="exampleInputEmail1" aria-describedby="emailHelp">
                         <?php if($errorEmail) ?> <small class="error form-text"> <?php echo $errorEmail ?> </small> 
                     </div>
+                    
+                    
+                     <input type="file" name="photo" />
+                     
+                     
                     <div class="form-group">
                         <label for="exampleInputPassword1">Mot de passe</label>
                         <input value="<?php if((isset($_POST['password']))) { echo $_POST['password']; } ?>" name="password" type="password" class="formulaire" id="exampleInputPassword1">

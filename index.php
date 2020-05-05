@@ -19,7 +19,7 @@
             <div class="row">
                 
                  <?php 
-                    $result = $pdo->query("SELECT * FROM agence ORDER BY id DESC LIMIT 2 ");
+                    $result = $pdo->query("SELECT * FROM agence ORDER BY id DESC LIMIT 2 OFFSET 1");
                     while($listeArticle = $result->fetch(PDO::FETCH_ASSOC)){ 
                  ?>
                                   
