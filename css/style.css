@@ -78,6 +78,15 @@ h2 {
   height: 250px;
 }
 
+.breadcrumb-contact-admin {
+  background-image: url(../img/contact.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  
+}
+
 .breadcrumb-bar {
   background: #48B6FF;
   color: #fff;
@@ -100,7 +109,10 @@ h2 {
   font-weight: 700;
   color: #ff7947;
 }
-
+.error-form{
+    color: #ec681b ;
+    font-size: .8rem;
+}
 .image img {
   display: block;
   opacity: 1;
@@ -116,6 +128,17 @@ h2 {
 
 .img-fluid {
   border-radius: 12px 12px 0 0;
+}
+
+.login-text{
+    position: relative;
+    font-size: 4rem !important;
+    color: aliceblue;
+    top: 80px;
+    background: rgba(0,0,0,0.8);
+    padding:10px 0 10px 0;
+    
+    
 }
 
 .menu-padding {
@@ -217,7 +240,7 @@ h2 {
   color: #fff;
 }
 .topbar3 a:hover {
-  color: #313131;
+  color: #f69402;
   text-decoration: none;
   transition-duration: 0.3s;
 }
@@ -742,7 +765,24 @@ a.blue:hover {
   background: #fff;
 }
 
-
+.topbar{
+    background: #313131;
+    
+    padding: 20px;
+    
+    
+}
+.topbar p{
+    color: #fff;
+}
+.topbar a{
+    color: #ec681b;
+}
+.image-admin img{
+    width:64px;
+    height: 64px;
+    border-radius: 100%;
+}
 
 
 /*# sourceMappingURL=style.css.map */

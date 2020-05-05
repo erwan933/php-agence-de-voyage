@@ -11,8 +11,8 @@
             
              <div class="right">
                   <a href="voyages.php" class="active menu-padding" id="hover">NOS VOYAGES</a>
-                  <a href="annonce.php" class=" menu-padding">Déposer une annonce</a>
-                  <a href="reg.php" class="menu-padding">Mon Espace</a>
+                  <!--<a href="annonce.php" class=" menu-padding">Déposer une annonce</a>-->
+                  <a href="admin/index.php" class="menu-padding">Déposer une annonce</a>
                   <a href="contact.php" class=" menu-padding">Contact</a>
               </div>
               
@@ -26,8 +26,8 @@
              <div class="right-mobile">
                  <a href="index.php" class="menu-padding">Accueil</a>
                  <a href="voyages.php" class=" active menu-padding">Nos voyages</a>
-                  <a href="annonce.php" class=" menu-padding">Déposer une annonce</a>
-                  <a href="reg.php" class=" menu-padding">Mon Espace</a>
+                  <!--<a href="annonce.php" class=" menu-padding">Déposer une annonce</a>-->
+                  <a href="admin/index.php" class=" menu-padding">Déposer une annonce</a>
                   <a href="contact.php" class=" menu-padding">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
