@@ -34,14 +34,14 @@
                 <div class="topnav" id="myTopnav">
                      <div class="row">
                          <div class="col-md-1 ">
-                              <a href="../index.php" class="logo"><img src="../img/logo2.png" alt="Logo Locasun" width="90rem"></a>
+                              <a href="../index.php" class="logo" title="logo"><img src="../img/logo2.png" alt="Logo Locasun" width="90rem"></a>
                          </div>   
                          <div class="col-md-4"></div>     
                          <div class="col-md-7">
                              <div class="right">
-                                  <a href="../voyages.php" class="active menu-padding" id="hover">NOS VOYAGES</a>
-                                  <a href="index.php" class=" menu-padding">Déposer une annonce</a>
-                                  <a href="../contact.php" class=" menu-padding">Contact</a>
+                                  <a href="../voyages.php" class="active menu-padding" id="hover" title="Voyages">NOS VOYAGES</a>
+                                  <a href="index.php" class=" menu-padding" title="Annonce">Déposer une annonce</a>
+                                  <a href="../contact.php" class=" menu-padding" title="Page Contact">Contact</a>
                              </div>
                          </div>
                     </div>
@@ -49,11 +49,11 @@
             </div>
         <div class="topnav-mobile" id="myTopnavMobile">
              <div class="right-mobile">
-                 <a href="../index.php" class="menu-padding">Accueil</a>
-                 <a href="../voyages.php" class=" active menu-padding">Nos voyages</a>
-                 <a href="index.php" class=" menu-padding">Déposer une annonce</a>
-                 <a href="../contact.php" class=" menu-padding">Contact</a>
-                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                 <a href="../index.php" class="menu-padding" title="Accueil">Accueil</a>
+                 <a href="../voyages.php" class=" active menu-padding" title="Voyages">Nos voyages</a>
+                 <a href="index.php" class=" menu-padding" title="Annonce">Déposer une annonce</a>
+                 <a href="../contact.php" class=" menu-padding" title="Contact">Contact</a>
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="JS">
                       <i class="fa fa-bars"></i>
                  </a>
               </div>
@@ -133,7 +133,7 @@
 }
                 
                 ?>
-                <a href="register.php">Je n'ai pas de compte ?</a> <br> <br>
+                <a href="register.php" title="Inscription">Je n'ai pas de compte ?</a> <br> <br>
                 <button type="submit" class="bouton-php">Se connecter</button>
 
                 <!--<input type="text" name="pseudo">
@@ -150,6 +150,6 @@
         <?php include'../layout/script.php'?>
         <?php include'../js/popup.php'?>
     
-        <a class="scroll-to-top hidden-mobile visible" href="#"><i class="fas fa-arrow-up "></i></a>
+        <a class="scroll-to-top hidden-mobile visible" href="#" title="Scrolltop"><i class="fas fa-arrow-up "></i></a>
     </body>
 </html>

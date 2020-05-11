@@ -1,12 +1,64 @@
-<?php include'BDD/connexion-bdd.php'?> 
+<?php include'../BDD/connexion-bdd.php'?> 
 <!DOCTYPE html>
 <html lang="fr">
-<?php include'layout/head.php'?>
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/theme.css">
+        <link rel="stylesheet" href="../css/theme-elements.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/dark.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <meta name="description" content="LocaSun est l'agence idéale pour l'organisation de vos voyages, faites confiance à LocaSun pour un voyage réussi">
+        <meta property="og:title" content="LocaSun | Pour un voyage réussi" />
+        <meta property="og:url" content="http://www.projet-php.topadev.com" />
+        <meta property="og:image" content="http://www.projet-php.topadev.com/img/slide-1.jpg" />
+        <link rel="stylesheet" href="../css/popup.css">   
+        <script src="https://kit.fontawesome.com/c9bc4d46f8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <title>Locasun | Connexion </title>
+    </head>
 <title>Locasun | Votre agence de voyage</title>
 <body>
-    <?php include'layout/topbar.php'?>
-    <?php include'layout/header.php'?>
-    <?php include'landing/breadcrumb.php'?>
+	
+	<header>
+       
+          <div class="container">
+                <div class="topnav" id="myTopnav">
+                     <div class="row">
+                         <div class="col-md-1 ">
+                              <a href="../index.php" class="logo" title="logo"><img src="../img/logo2.png" alt="Logo Locasun" width="90rem"></a>
+                         </div>   
+                         <div class="col-md-4"></div>     
+                         <div class="col-md-7">
+                             <div class="right">
+                                  <a href="../voyages.php" class="active menu-padding" id="hover" title="Voyages">NOS VOYAGES</a>
+                                  <a href="index.php" class=" menu-padding" title="Annonce">Déposer une annonce</a>
+                                  <a href="../contact.php" class=" menu-padding" title="Page Contact">Contact</a>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        <div class="topnav-mobile" id="myTopnavMobile">
+             <div class="right-mobile">
+                 <a href="../index.php" class="menu-padding" title="Accueil">Accueil</a>
+                 <a href="../voyages.php" class=" active menu-padding" title="Voyages">Nos voyages</a>
+                 <a href="index.php" class=" menu-padding" title="Annonce">Déposer une annonce</a>
+                 <a href="../contact.php" class=" menu-padding" title="Contact">Contact</a>
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="JS">
+                      <i class="fa fa-bars"></i>
+                 </a>
+              </div>
+        </div>
+ </header>
+    
+   
     
    
       
@@ -114,9 +166,9 @@ $listeArticle = $result->fetch(PDO::FETCH_ASSOC);
        
     
     
-    <?php include'layout/footer.php'?>
-    <?php include'layout/script.php'?>
-    <?php include'js/popup.php'?>
+    <?php include'../layout/footer.php'?>
+    <?php include'../layout/script.php'?>
+    <?php include'../js/popup.php'?>
     
 </body>
 </html>

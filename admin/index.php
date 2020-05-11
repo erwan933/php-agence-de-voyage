@@ -53,11 +53,14 @@ if(isset($_GET['logout'], $_GET['key']) && !empty($_GET['key'])) {
             'price' => $_POST['price'],
             'members' => $_POST['members'],
             
-
         ));
          
     }  
     
+
+
+
+
 ?> 
 <!DOCTYPE html>
 <html lang="fr" xmlns:og="http://ogp.me/ns#" id="top">
@@ -71,6 +74,7 @@ if(isset($_GET['logout'], $_GET['key']) && !empty($_GET['key'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/dark.css">
+        
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../img/favicon.png">
@@ -101,14 +105,14 @@ if(isset($_GET['logout'], $_GET['key']) && !empty($_GET['key'])) {
         
         ?>
          
-   
+   <?php   } ?>
                       <div class="col-md-2 image-admin" > 
-                           <img src="<?php echo $listeArticle["photo"]; ?>" alt="Photo Profil">
+                           <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=660&q=80" alt="Photo Profil">
                        </div>
-                        <?php   } ?> 
+                         
                       <div class="col-md-10">
                           <p>Vous êtes connecté(e) <strong><?=$_SESSION['admin']?></strong></p>
-                           <a href="?logout=true&key=$_SESSION['admin']">Se deconnecter</a>
+                           <a href="?logout=true&key=$_SESSION['admin']" title="Déconnexion">Se deconnecter</a>
                        </div>
                   </div>   
                </div>
@@ -202,14 +206,14 @@ if(isset($_GET['logout'], $_GET['key']) && !empty($_GET['key'])) {
                         <span class="card__date__month"><i class="fas fa-user-friends"></i></span>
                     </div>  
                     <div class="card__body">
-                        <div class="card__category"><a href="#">Photos</a></div>
-                        <div class="card__title"><a href="produit.php?id=<?php echo $listeArticle['id']; ?>"><?php echo $listeArticle["title"]; ?></a></div>
+                        <div class="card__category"><a href="#" title="Photos">Photos</a></div>
+                        <div class="card__title"><a href="produit.php?id=<?php echo $listeArticle['id']; ?>" title="Produits"><?php echo $listeArticle["title"]; ?></a></div>
                         <div class="card__subtitle"><?php echo $listeArticle["destination"]; ?></div>
                         <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </p>
                     </div>  
             
                         <footer class="card__footer">
-                            <span class="icon icon--time"><a href="?delete=<?php echo $listeArticle["id"]; ?>."><i class="fas fa-trash-alt" style="color:#ff0000;"></i></a></span>Supprimer
+                            <span class="icon icon--time"><a href="?delete=<?php echo $listeArticle["id"]; ?>." title="Supprimer"><i class="fas fa-trash-alt" style="color:#ff0000;"></i></a></span>Supprimer
 
                         </footer>
                     </article>
@@ -219,17 +223,75 @@ if(isset($_GET['logout'], $_GET['key']) && !empty($_GET['key'])) {
           </div>
       </div>
   </section>
-        
+		
+		
+  <footer>
+   <section class="section1">
+      <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="../img/logo2.png" alt="" width="150rem">
+                    <p class="footer blanc"> Envie de nous confier votre projet ?</p>
+                    <p>L’équipe <a href="/" class="orange" title="Locasun">LocaSun</a> est à votre écoute pour toute demande </p>
+                        <br><br><br>
+                    <a href="contact" class="button-style-1" title="Page Contact">Contactez-nous</a>
+                        <br><br><br><br>
+                </div>        
+                <div class="col-md-1"></div>  
+                <div class="col-md-5">         
+                      <p style="font-weight:700"> CONTACT </p>  
+                      <p class="orange">
+                          <i class="fas fa-chevron-right">&nbsp;</i>
+                          <span class="blanc">Téléphone :</span> 
+                          <a href="#" class="orange" title="Téléphone">06 87 89 65 25</a>
+                      </p>
+                      <p class="orange">
+                          <i class="fas fa-chevron-right">&nbsp;</i>
+                          <span class="blanc">Mail :</span> 
+                          <a href="#" class="orange" title="téléphone">contact@locasun.com</a>
+                      </p>
+                      <p class="orange">
+                            <i class="fas fa-chevron-right">&nbsp;</i>
+                            <span class="blanc">Adresse :</span>
+                                <br>
+                            84 Allée Gambetta <br>77000, Meaux 
+                      </p>
+                       <br>
+                        <p class="orange">
+                            <i class="fas fa-chevron-right">&nbsp;</i>
+                            <span class="blanc">Suivez-nous sur les réseaux sociaux :</span>
+                            <br>
+                        </p>
+                        <a href="#" class="sociaux" title="Réseaux sociaux">
+                            <span>
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>    
+                        <a href="#" class="sociaux" title="Réseaux sociaux">
+                            <span>
+                                <i class="fab fa-facebook"></i>
+                            </span>
+                        </a> 
+                </div>
+            </div>
+      </div>
+   </section> 
+</footer>
 
+<section id="copyright">
+   <div class="container text-center">
+       &copy; <?php echo date('Y');?> Copyright <a href="#">LocaSun</a> | Tous droits réservés - <a href="mentions-legales">Mentions Légales</a> - <a href="a-propos">A propos</a>
+    </div>
+</section>
         
         
-        <?php include'../layout/footer.php'?>
         <?php include'../layout/script.php'?>
         <?php include'../js/popup.php'?>
        
         
-        <a class="scroll-to-top hidden-mobile visible" href="#"><i class="fas fa-arrow-up "></i></a>
+        <a class="scroll-to-top hidden-mobile visible" href="#" title="STT"><i class="fas fa-arrow-up "></i></a>
         
         
     </body>
 </html>
+

@@ -27,7 +27,7 @@
                <div class="col-xl-5">
                   <article style="width:100%" >
                       
-                          <a href="produit.php?id=<?php echo $listeArticle['id']; ?>" class="h2 bleu"><?php echo $listeArticle["title"]; ?></a>
+                          <a href="produit.php?id=<?php echo $listeArticle['id']; ?>" class="h2 bleu" title="Produit"><?php echo $listeArticle["title"]; ?></a>
                       
                       <div class=""><?php echo $listeArticle["destination"]; ?></div>
                       <span class="price font-primary text-4"><strong class="text-color-dark"><?php echo $listeArticle["price"]; ?>€</strong> <s>1500€</s></span>

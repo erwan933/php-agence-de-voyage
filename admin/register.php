@@ -5,16 +5,13 @@
 
     $errorEmail = false;
     $errorPseudo = false;
-    $errorPhoto = false;
     $errorPassword = false;
 
-    if(isset($_POST['email'], $_POST['pseudo'], $_POST['photo'], $_POST['password'])) {
+    if(isset($_POST['email'], $_POST['pseudo'], $_POST['password'])) {
         if(empty($_POST['email'])) {
             $errorEmail = "<p class='error-form'>Veuillez remplir ce champ !</p>";
         }else if(empty($_POST['pseudo'])) {
             $errorPseudo = "<p class='error-form'>Veuillez remplir ce champ !</p>";
-        }else if (empty($_POST['photo'])) {
-        $errorPhoto = "";
         }else if (empty($_POST['password'])) {
             $errorPassword = "<p class='error-form'>Veuillez remplir ce champ !</p>";
         } else {
@@ -43,7 +40,7 @@
                 $errorPassword = "<p class='error-form'>* Le mot de passe doit comporter au moins 8 caractères et doit comprendre au moins une lettre majuscule.</p>";
             }
 
-            if($errorEmail == false && $errorPseudo == false && $errorPhoto == false && $errorPassword == false) {
+            if($errorEmail == false && $errorPseudo == false && $errorPassword == false) {
 
                 $password = password_hash($password, PASSWORD_DEFAULT); // hach password
 
@@ -59,18 +56,17 @@
                 $user = $user_check_query->fetch();
                 if ($num == 1) { // if user exists
                     if ($user['email'] === $email) {
-                        $errorEmail = "Email déjà existant, <a href='login.php'>connexion ?</a>";
+                        $errorEmail = "Email déjà existant, <a href='login.php' title='Connexion'>connexion ?</a>";
                     }
 
                     if ($user['pseudo'] === $pseudo) {
-                        $errorPseudo = "Pseudo déjà existant, <a href='login.php'>connexion ?</a>";
+                        $errorPseudo = "Pseudo déjà existant, <a href='login.php' title='connexion'>connexion ?</a>";
                     }
                 } else {
-                    $query = $pdo->prepare("INSERT INTO users(email, pseudo, photo, password) VALUES(?, ?, ?, ?)");
+                    $query = $pdo->prepare("INSERT INTO users(email, pseudo, password) VALUES(?, ?, ?)");
                     $query->bindValue(1, $email);
-                    $query->bindValue(2, $pseudo);
-                    $query->bindValue(3, $pseudo);
-                    $query->bindValue(4, $password);
+                    $query->bindValue(2, $pseudo);   
+                    $query->bindValue(3, $password);
                     $query->execute();
                     $_SESSION['logged_in'] = true;
                     $_SESSION['pseudo'] = $pseudo;
@@ -115,15 +111,15 @@
             <div class="topnav" id="myTopnav">
                  <div class="row">
                      <div class="col-md-1 ">
-                          <a href="../index.php" class="logo"><img src="../img/logo2.png" alt="Logo Locasun" width="90rem"></a>
+                          <a href="../index.php" class="logo" title="logo"><img src="../img/logo2.png" alt="Logo Locasun" width="90rem"></a>
                      </div>   
                      <div class="col-md-4"></div>     
                      <div class="col-md-7">
                          <div class="right">
-                              <a href="../voyages.php" class="active menu-padding" id="hover">NOS VOYAGES</a>
-                              <a href="index.php" class=" menu-padding">Déposer une annonce</a>
+                              <a href="../voyages.php" class="active menu-padding" id="hover" title="Voyages">NOS VOYAGES</a>
+                              <a href="index.php" class=" menu-padding" title="Annonce">Déposer une annonce</a>
                               
-                              <a href="../contact.php" class=" menu-padding">Contact</a>
+                              <a href="../contact.php" class=" menu-padding" title="Page Contact">Contact</a>
                           </div>
                     </div>
                 </div>
@@ -131,11 +127,11 @@
         </div>
         <div class="topnav-mobile" id="myTopnavMobile">
              <div class="right-mobile">
-                  <a href="../index.php" class="menu-padding">Accueil</a>
-                  <a href="../voyages.php" class=" active menu-padding">Nos voyages</a>
-                  <a href="index.php" class=" menu-padding">Déposer une annonce</a>
-                  <a href="../contact.php" class=" menu-padding">Contact</a>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <a href="../index.php" class="menu-padding" title="Accueil">Accueil</a>
+                  <a href="../voyages.php" class=" active menu-padding" title="Voyages">Nos voyages</a>
+                  <a href="index.php" class=" menu-padding" title="Annonce">Déposer une annonce</a>
+                  <a href="../contact.php" class=" menu-padding" title="Page Contact">Contact</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="JS">
                     <i class="fa fa-bars"></i>
                   </a>
              </div>
@@ -164,16 +160,13 @@
                     </div>
                     
                     
-                     <input type="file" name="photo" />
-                     
-                     
                     <div class="form-group">
                         <label for="exampleInputPassword1">Mot de passe</label>
                         <input value="<?php if((isset($_POST['password']))) { echo $_POST['password']; } ?>" name="password" type="password" class="formulaire" id="exampleInputPassword1">
                         <?php if($errorPassword) ?> <small class="error form-text"> <?php echo $errorPassword ?> </small>
                     </div>
                     
-                    <a href="login.php">J'ai un compte ?</a> <br> <br>
+                    <a href="login.php" title="Connexion">J'ai un compte ?</a> <br> <br>
                     <button type="submit" class="bouton-php">S'inscrire</button>
                 </form>
             </div>

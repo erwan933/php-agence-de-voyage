@@ -56,7 +56,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 546px;
+  min-height: 546px;
 }
 
 .best-offer {
@@ -789,10 +789,13 @@ a.blue:hover {
     
     
 }
+.box{
+	margin-top:20px;
+}
 .topbar p{
     color: #fff;
 }
-.topbar a{
+.topbar a{ 
     color: #ec681b;
 }
 .image-admin img{

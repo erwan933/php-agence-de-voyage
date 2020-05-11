@@ -35,10 +35,10 @@
                         </div>  
                         <div class="card__body__2">
                             <div class="card__category">
-                                <a href="produit.php?id=<?php echo $listeArticle['id']; ?>">Photos</a>
+                                <a href="produit.php?id=<?php echo $listeArticle['id']; ?>" title="Produits">Photos</a>
                             </div>
                             <div class="card__title">
-                                <a href="produit.php?id=<?php echo $listeArticle['id']; ?>"><?php echo $listeArticle["title"]; ?></a>
+                                <a href="produit.php?id=<?php echo $listeArticle['id']; ?>" title="Article"><?php echo $listeArticle["title"]; ?></a>
                             </div>
                             <div class="card__subtitle"><?php echo $listeArticle["destination"]; ?></div>
                             <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </p>
@@ -66,7 +66,7 @@
                                 <tr>
                                   <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
                                       <div class="text-center">
-                                        <a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
+                                        <a href="#" class="button-style-2" style="display:inline-block;" title="Destinations">Nos destinations</a>
                                       </div>
                                   </td>
                                 </tr>
@@ -86,7 +86,7 @@
                                 <tr>
                                   <td class="align-middle"><span class="h2">Votre location de vacance de particulier à particulier</span><br><br><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
                                       <div class="text-center">
-                                       <a href="#" class="button-style-2" style="display:inline-block;">Nos destinations</a>
+                                       <a href="#" class="button-style-2" style="display:inline-block;" title="Destination">Nos destinations</a>
                                       </div>
                                   </td>
                                 </tr>
@@ -141,8 +141,8 @@
                             <h2>Vous avez choisi la bonne agence</h2>
                             <span>Faites confiance à LocaSun pour le bon déroulement de vos voyages</span>
                         </div>
-                        <a href="#" class="button-style-1" >Nos destinations</a>
-                        <a href="#" class="button-style-2" >Contact</a>
+                        <a href="#" class="button-style-1" title="Destination">Nos destinations</a>
+                        <a href="#" class="button-style-2" title="Contact">Contact</a>
                     </div> 
                 </div>
             </section>
@@ -152,7 +152,7 @@
         <?php include'js/popup.php'?>
        
         
-        <a class="scroll-to-top hidden-mobile visible" href="#"><i class="fas fa-arrow-up "></i></a>
+        <a class="scroll-to-top hidden-mobile visible" href="#" title="scrolltotop"><i class="fas fa-arrow-up "></i></a>
         
         
     </body>

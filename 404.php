@@ -9,7 +9,12 @@
         
 
    
-         404 Page Non Trouvée : Prochainement
+        <section class="section1">
+			<div class="container">
+			
+				404 Page Non Trouvée : Prochainement
+			</div>
+		</section> 
       
       
       

@@ -31,9 +31,9 @@
                         <span class="card__date__month"><i class="fas fa-user-friends"></i></span>
                     </div>  
                     <div class="card__body">
-                        <div class="card__category"><a href="#">Photos</a></div>
+                        <div class="card__category"><a href="#" title="Photos">Photos</a></div>
                         <div class="card__title">
-                            <a href="produit.php?id=<?php echo $listeArticle['id']; ?>"><?php echo $listeArticle["title"]; ?></a>
+                            <a href="produit.php?id=<?php echo $listeArticle['id']; ?>" title="Titre produit"><?php echo $listeArticle["title"]; ?></a>
                         </div>
                         <div class="card__subtitle"><?php echo $listeArticle["destination"]; ?></div>
                         <p class="card__description"><?php echo substr($listeArticle["article"], 0, 250); ?>...  </p>
@@ -41,7 +41,7 @@
                    
                     <footer class="card__footer">
                         <span class="icon icon--time"><i class="fas fa-comments"></i></span>6 min
-                        <span class="icon icon--comment"><i class="fas fa-comments"></i></span><a href="#">39 comments</a>
+                        <span class="icon icon--comment"><i class="fas fa-comments"></i></span><a href="#" title="Commentaires">39 comments</a>
                     </footer>
         
                 </article>
